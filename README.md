@@ -1,6 +1,6 @@
 # Flexwind Froggy
 
-Flexwind Froggy is a game for learning CSS flexbox. Check it out at [flexwindfroggy.com](https://flexwindfroggy.com).
+Flexwind Froggy is a game for learning Tailwind CSS flex utilities. Check it out at [flexwindfroggy.com](https://flexwindfroggy.com).
 
 This project is a fork of [thomaspark/flexboxfroggy](https://github.com/thomaspark/flexboxfroggy), created by [Thomas Park](https://github.com/thomaspark). Flexwind Froggy is an independently maintained, renamed version of that project.
 

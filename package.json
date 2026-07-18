@@ -1,7 +1,7 @@
 {
   "name": "flexwindfroggy",
   "version": "1.0.0",
-  "description": "A game for learning CSS flexbox",
+  "description": "A game for learning Tailwind flex utilities",
   "main": "game.js",
   "dependencies": {
     "animate.css": "^3.4.0",
