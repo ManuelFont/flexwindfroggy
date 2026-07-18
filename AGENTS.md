@@ -1,4 +1,4 @@
-# Flexbox Froggy — Agent Guide
+# Flexwind Froggy — Agent Guide
 
 ## Project purpose
 

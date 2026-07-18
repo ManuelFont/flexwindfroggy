@@ -1,7 +1,7 @@
-Flexbox Froggy
+Flexwind Froggy
 =======
 
-Flexbox Froggy is a game for learning CSS flexbox. Check it out at [flexboxfroggy.com](https://flexboxfroggy.com).
+Flexwind Froggy is a game for learning CSS flexbox. Check it out at [flexwindfroggy.com](https://flexwindfroggy.com).
 
 Read [this blog post](https://thomaspark.co/2015/11/learning-css-layout-with-flexbox-froggy/) for background on the project.
 
@@ -17,7 +17,7 @@ Thomas Park
 
 ## Translators
 
-My gratitude to these contributors for localizing Flexbox Froggy. This is what open source is all about.
+My gratitude to these contributors for localizing Flexwind Froggy. This is what open source is all about.
 
 * Afrikaans by [Andrea Zonnekus](https://github.com/andreazonnekus)
 * Arabic by [Mahmoud Al-Omoush](https://github.com/m7modg97)
@@ -73,8 +73,8 @@ My gratitude to these contributors for localizing Flexbox Froggy. This is what o
 * Vietnamese by [Kingsten Banh](https://github.com/kingstenbanh)
 * Yoruba by [Oluwafisayomi Balogun](https://github.com/oluwafisayomi-balogun)
 
-Don't see your language on the list? Contribute a translation! Fork the [repo](https://github.com/thomaspark/flexboxfroggy/), add your translations, and submit a pull request.
+Don't see your language on the list? Contribute a translation! Fork the [repo](https://github.com/thomaspark/flexwindfroggy/), add your translations, and submit a pull request.
 
 ## Copyright and License
 
-Copyright 2015-2023 Thomas Park. Code released under [the MIT License](https://github.com/thomaspark/flexboxfroggy/blob/gh-pages/LICENSE). Images released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/legalcode.txt).
+Copyright 2015-2023 Thomas Park. Code released under [the MIT License](https://github.com/thomaspark/flexwindfroggy/blob/gh-pages/LICENSE). Images released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/legalcode.txt).
