@@ -11,6 +11,14 @@ var messages = {
     'en': 'Flexwind Froggy is created by',
     'es': 'Flexwind Froggy es una creación de',
   },
+  labelBasedOn: {
+    'en': 'Based on Flexbox Froggy by Thomas Park',
+    'es': 'Basado en Flexbox Froggy de Thomas Park',
+  },
+  labelLicense: {
+    'en': 'MIT License',
+    'es': 'Licencia MIT',
+  },
   labelLevel: {
     'en': 'Level',
     'es': 'Nivel',
