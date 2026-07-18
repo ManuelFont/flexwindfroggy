@@ -16,6 +16,9 @@ var game = {
       game.language = requestLang;
       window.location.hash = requestLang;
     }
+    if (!messages.languageActive.hasOwnProperty(game.language)) {
+      game.language = 'en';
+    }
 
     game.translate();
     $('#level-counter .total').text(levels.length);
@@ -173,7 +176,8 @@ var game = {
       localStorage.setItem('solved', JSON.stringify(game.solved));
       localStorage.setItem('colorblind', JSON.stringify(game.colorblind));
     }).on('hashchange', function() {
-      game.language = window.location.hash.substring(1) || 'en';
+      var requestedLanguage = window.location.hash.substring(1);
+      game.language = messages.languageActive.hasOwnProperty(requestedLanguage) ? requestedLanguage : 'en';
       game.translate();
 
       $('#tweet iframe').remove();
