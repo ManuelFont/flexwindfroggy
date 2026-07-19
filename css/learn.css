@@ -43,6 +43,8 @@ code { font-family: "Source Code Pro", monospace; }
 .lesson-links a { background: #fff; border: 1px solid #c7ddca; border-radius: .5rem; display: block; font-weight: bold; padding: .9rem; text-decoration: none; }
 .lesson-links a:hover, .lesson-links a:focus { background: #e0f3e1; }
 .cta { background: #2e9e4d; border-radius: .5rem; color: white; display: inline-block; font-weight: bold; padding: .75rem 1rem; text-decoration: none; }
+.ad-slot--lesson { margin: 2.5rem auto 0; max-width: 728px; min-height: 100px; text-align: center; }
+.ad-slot__label { color: #327446; font-size: .75rem; margin: 0 0 .5rem; text-transform: uppercase; }
 .site-footer { border-top: 1px solid #c7ddca; padding: 1.5rem 0 2.5rem; }
 
 @media (min-width: 640px) {
