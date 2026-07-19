@@ -2,19 +2,16 @@
 
 Flexwind Froggy is a game for learning Tailwind CSS flex utilities. Check it out at [flexwindfroggy.com](https://flexwindfroggy.com).
 
-This project is a fork of [thomaspark/flexboxfroggy](https://github.com/thomaspark/flexboxfroggy), created by [Thomas Park](https://github.com/thomaspark). Flexwind Froggy is an independently maintained, renamed version of that project.
-
-Read [this blog post](https://thomaspark.co/2015/11/learning-css-layout-with-flexbox-froggy/) for background on the project.
+This project is a fork of [thomaspark/flexboxfroggy](https://github.com/thomaspark/flexboxfroggy), created by [Thomas Park](https://github.com/thomaspark). Flexwind Froggy is an independently maintained, tailwind version of that project.
 
 ![FontCDN screenshot](./images/screenshot.png)
 
-## Upstream author
+## Author
 
-Thomas Park
+Manuel Font
 
-- [Twitter](https://twitter.com/thomashpark)
-- [Homepage](https://thomaspark.co)
-- [GitHub](https://github.com/thomaspark)
+- [GitHub](https://github.com/ManuelFont)
+- [LinkedIn](https://www.linkedin.com/in/manuel-font-/)
 
 ## Copyright and License
 
