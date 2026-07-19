@@ -75,28 +75,21 @@ var game = {
 
     $("#code")
       .on("keydown", function (e) {
-        if (e.keyCode === "Enter") {
-          if (e.ctrlKey || e.metaKey) {
-            e.preventDefault();
-            game.check();
+        if (e.key === "Enter" || e.which === 13) {
+          e.preventDefault();
+          game.check().then(function () {
             $("#next").click();
-            return;
-          }
+          });
+          return false;
+        }
+      })
+      .on("input", function () {
+        // Keep pasted content consistent with the single-line class-list editor.
+        var value = $(this).val();
+        var normalizedValue = value.replace(/[\r\n]+/g, " ");
 
-          var max = $(this).data("lines");
-          var code = $(this).val();
-          var trim = code.trim();
-          var codeLength = code.split("\n").length;
-          var trimLength = trim.split("\n").length;
-
-          if (codeLength >= max) {
-            if (codeLength === trimLength) {
-              e.preventDefault();
-              $("#next").click();
-            } else {
-              $("#code").focus().val("").val(trim);
-            }
-          }
+        if (value !== normalizedValue) {
+          $(this).val(normalizedValue);
         }
       })
       .on("input", game.debounce(game.check, 500))
