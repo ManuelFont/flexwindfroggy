@@ -159,8 +159,9 @@ var levels = [
     selector: "> :nth-child(2)",
     classes: { "#pond, #background": "wrap" },
     style: { order: "2" },
-    before: '<div id="pond" class="flex flex-wrap">\n  <div class="frog yellow ',
-    after: '"></div>\n</div>',
+    before:
+      '<div id="pond" class="flex flex-wrap">\n  <div class="frog yellow ',
+    after: '  "></div>\n</div>',
   },
   {
     name: "order 2",
@@ -173,7 +174,7 @@ var levels = [
     classes: { "#pond, #background": "wrap" },
     style: { order: "-1" },
     before: '<div id="pond" class="flex flex-wrap">\n  <div class="frog red ',
-    after: '"></div>\n</div>',
+    after: '  "></div>\n</div>',
   },
   {
     name: "align-self 1",
@@ -186,7 +187,7 @@ var levels = [
     style: { "align-self": "flex-end" },
     before:
       '<div id="pond" class="flex items-start">\n  <div class="frog yellow ',
-    after: '"></div>\n</div>',
+    after: '  "></div>\n</div>',
   },
   {
     name: "align-self 2",
@@ -199,7 +200,7 @@ var levels = [
     style: { "align-self": "flex-end", order: "2" },
     before:
       '<div id="pond" class="flex items-start">\n  <div class="frog yellow ',
-    after: '"></div>\n</div>',
+    after: '  "></div>\n</div>',
   },
   {
     name: "flex-wrap 1",

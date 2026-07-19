@@ -314,9 +314,7 @@ var game = {
     this.loadDocs();
 
     var lines = Object.keys(level.style).length;
-    $("#code")
-      .height(20 * lines)
-      .data("lines", lines);
+    $("#code").height(20).data("lines", lines);
 
     var string = level.board;
     var markup = "";
@@ -414,11 +412,7 @@ var game = {
   applyStyles: function () {
     var level = levels[game.level];
     var selector = level.selector || "";
-    var utilities = $("#code")
-      .val()
-      .trim()
-      .split(/\s+/)
-      .filter(Boolean);
+    var utilities = $("#code").val().trim().split(/\s+/).filter(Boolean);
     var styles = {};
 
     utilities.forEach(function (utility) {
@@ -427,7 +421,9 @@ var game = {
       }
     });
 
-    $("#pond " + selector).attr("style", "").css(styles);
+    $("#pond " + selector)
+      .attr("style", "")
+      .css(styles);
     game.saveAnswer();
   },
 
