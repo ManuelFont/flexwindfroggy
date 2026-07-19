@@ -136,8 +136,6 @@
       <div class="credits" style="margin-bottom: 1rem;">
         <span id="labelAttribution" class="translate">Original <a href="https://flexboxfroggy.com/" target="_blank" rel="noopener noreferrer">Flexbox Froggy</a> and artwork by Thomas Park · <a href="LICENSE">MIT License</a> · <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>.</span>
       </div>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5896187408169408"
-           crossorigin="anonymous"></script>
       <!-- FlexWindFroggy -->
       <div class="ad-slot">
         <ins class="adsbygoogle"
@@ -147,9 +145,6 @@
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
       </div>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
     </section>
     <section id="view">
       <div id="board">
@@ -165,14 +160,59 @@
     <script src="js/messages.js"></script>
     <script src="js/tailwind-utilities.js"></script>
     <script src="js/game.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H137ZNPZ1Q"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      // Keep advertising and analytics off the game's initial rendering path.
+      (function () {
+        function loadScript(src, options, onload) {
+          var script = document.createElement("script");
+          script.async = true;
+          script.src = src;
 
-      gtag('config', 'G-H137ZNPZ1Q');
+          if (options && options.crossOrigin) {
+            script.crossOrigin = options.crossOrigin;
+          }
+
+          if (onload) {
+            script.onload = onload;
+          }
+
+          document.head.appendChild(script);
+        }
+
+        function loadThirdParties() {
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function () {
+            window.dataLayer.push(arguments);
+          };
+          window.gtag("js", new Date());
+          window.gtag("config", "G-H137ZNPZ1Q");
+
+          loadScript(
+            "https://www.googletagmanager.com/gtag/js?id=G-H137ZNPZ1Q",
+          );
+          loadScript(
+            "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5896187408169408",
+            { crossOrigin: "anonymous" },
+            function () {
+              (window.adsbygoogle = window.adsbygoogle || []).push({});
+            },
+          );
+        }
+
+        function scheduleThirdParties() {
+          if ("requestIdleCallback" in window) {
+            window.requestIdleCallback(loadThirdParties, { timeout: 2000 });
+          } else {
+            window.setTimeout(loadThirdParties, 1);
+          }
+        }
+
+        if (document.readyState === "complete") {
+          scheduleThirdParties();
+        } else {
+          window.addEventListener("load", scheduleThirdParties, { once: true });
+        }
+      })();
     </script>
   </body>
 </html>
