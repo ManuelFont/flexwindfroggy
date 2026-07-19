@@ -1,1 +1,19 @@
-.idea/*
+# Dependencies installed from package.json
+node_modules/
+
+# npm and other local logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# macOS and editor metadata
+.DS_Store
+.idea/
+.vscode/
+
+# Local environment and build output
+.env
+.env.*
+_site/
+.sass-cache/

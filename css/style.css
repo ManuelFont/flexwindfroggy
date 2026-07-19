@@ -198,7 +198,7 @@ pre {
   color: #777;
 }
 
-#css {
+#tailwind {
   height: 260px;
   position: relative;
   padding: 10px 10px 10px 40px;
@@ -747,4 +747,3 @@ button:not(.disabled):hover {
   font-weight: 600;
   line-height: 1;
 }
-
