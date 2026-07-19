@@ -7,6 +7,10 @@ var messages = {
     en: "Next",
     es: "Siguiente",
   },
+  learn: {
+    en: "Learn more",
+    es: "Aprende más",
+  },
   labelFooter: {
     en: 'Flexwind Froggy is an independent fork by Manuel Font • <a href="https://github.com/ManuelFont" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/manuel-font-/" target="_blank" rel="noopener noreferrer">LinkedIn</a> • <a href="privacy.html">Privacy Policy</a>',
     es: 'Flexwind Froggy es un fork independiente de Manuel Font • <a href="https://github.com/ManuelFont" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/manuel-font-/" target="_blank" rel="noopener noreferrer">LinkedIn</a> • <a href="privacy.html">Política de privacidad</a>',

@@ -49,6 +49,10 @@ var game = {
   },
 
   setHandlers: function () {
+    $("#learn").on("click", function () {
+      window.location.assign("learn/direction.html");
+    });
+
     $("#next").on("click", function () {
       $("#code").focus();
 
