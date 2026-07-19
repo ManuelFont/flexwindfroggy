@@ -1,34 +1,30 @@
 var docs = {
-  "align-content": {
-    en: "<p>Aligns a flex container's lines within the flex container when there is extra space on the cross-axis.</p><code>flex-start</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code> <code>stretch (default)</code>",
-    es: "<p>Alinea las líneas de un contenedor flex cuando exista más espacio en el eje transversal.</p><code>flex-start</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code> <code>stretch (default)</code>",
-  },
-  "align-items": {
-    en: "<p>Aligns flex items along the cross axis.</p><code>flex-start</code> <code>flex-end</code> <code>center</code> <code>baseline</code> <code>stretch (default)</code>",
-    es: "<p>Alinea elementos Flex a lo largo del eje transversal.</p><code>flex-start</code> <code>flex-end</code> <code>center</code> <code>baseline</code> <code>stretch (default)</code>",
-  },
-  "align-self": {
-    en: "<p>Aligns a flex item along the cross axis, overriding the <code>align-items</code> value.</p><code>flex-start</code> <code>flex-end</code> <code>center</code> <code>baseline</code> <code>stretch</code>",
-    es: "<p>Alinea un elemento flex a lo largo del eje transversal, anulando el valor de <code>align-items</code></p><code>flex-start</code> <code>flex-end</code> <code>center</code> <code>baseline</code> <code>stretch</code>",
-  },
-  "flex-direction": {
-    en: "<p>Defines the direction of the main axis.</p><code>row (default)</code> <code>row-reverse</code> <code>column</code> <code>column-reverse</code>",
-    es: "<p>Define la dirección del eje principal.</p><code>row (default)</code> <code>row-reverse</code> <code>column</code> <code>column-reverse</code>",
-  },
-  "flex-flow": {
-    en: "<p>Shorthand property for <code>flex-direction</code> and <code>flex-wrap</code>.</p><code>&lt;flex-direction&gt; &lt;flex-wrap&gt;</code>",
-    es: "<p>Abreviación de las propiedades de <code>flex-direction</code> and <code>flex-wrap</code>.</p><code>&lt;flex-direction&gt; &lt;flex-wrap&gt;</code></p>",
-  },
-  "flex-wrap": {
-    en: "<p>Specifies whether flex items are forced on a single line or can be wrapped on multiple lines.</p><code>nowrap (default)</code> <code>wrap</code> <code>wrap-reverse</code>",
-    es: "<p>Especifica si los elementos flex son forzados a una sola línea o pueden ser envueltos en multiples líneas.</p><code>nowrap (default)</code> <code>wrap</code> <code>wrap-reverse</code>",
-  },
   justify: {
-    en: "<p>Aligns flex items along the main axis.</p><code>flex-start (default)</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code>",
-    es: "<p>Alinea los elementos flex a lo largo del eje principal.</p><code>flex-start (default)</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code>",
+    en: "<p>Controls placement along the main axis.</p><code>justify-start</code> <code>justify-end</code> <code>justify-center</code> <code>justify-between</code> <code>justify-around</code> <code>justify-evenly</code>",
+    es: "<p>Controla la ubicación a lo largo del eje principal.</p><code>justify-start</code> <code>justify-end</code> <code>justify-center</code> <code>justify-between</code> <code>justify-around</code> <code>justify-evenly</code>",
+  },
+  items: {
+    en: "<p>Controls placement across the main axis.</p><code>items-start</code> <code>items-end</code> <code>items-center</code> <code>items-baseline</code> <code>items-stretch</code>",
+    es: "<p>Controla la ubicación a través del eje principal.</p><code>items-start</code> <code>items-end</code> <code>items-center</code> <code>items-baseline</code> <code>items-stretch</code>",
+  },
+  flex: {
+    en: "<p>Sets the direction of the flex layout.</p><code>flex-row</code> <code>flex-row-reverse</code> <code>flex-col</code> <code>flex-col-reverse</code>",
+    es: "<p>Establece la dirección del diseño flexible.</p><code>flex-row</code> <code>flex-row-reverse</code> <code>flex-col</code> <code>flex-col-reverse</code>",
   },
   order: {
-    en: "<p>Specifies the order of the flex item.</p><code>&lt;integer&gt; (... -1, 0 (default), 1, ...)</code>",
-    es: "<p>Especifica el orden de los elementos flex.</p><code>&lt;integer&gt; (... -1, 0 (default), 1, ...)</code>",
+    en: "<p>Controls an individual frog's place in the sequence.</p><code>order-first</code> <code>order-last</code> <code>order-none</code> <code>order-1</code> <code>order-2</code> <code>order-3</code>",
+    es: "<p>Controla el lugar de una rana individual en la secuencia.</p><code>order-first</code> <code>order-last</code> <code>order-none</code> <code>order-1</code> <code>order-2</code> <code>order-3</code>",
+  },
+  self: {
+    en: "<p>Controls one frog's placement across the main axis.</p><code>self-auto</code> <code>self-start</code> <code>self-end</code> <code>self-center</code> <code>self-baseline</code> <code>self-stretch</code>",
+    es: "<p>Controla la ubicación de una rana a través del eje principal.</p><code>self-auto</code> <code>self-start</code> <code>self-end</code> <code>self-center</code> <code>self-baseline</code> <code>self-stretch</code>",
+  },
+  wrap: {
+    en: "<p>Controls whether frogs stay on one line or continue onto new lines.</p><code>flex-nowrap</code> <code>flex-wrap</code> <code>flex-wrap-reverse</code>",
+    es: "<p>Controla si las ranas permanecen en una línea o continúan en líneas nuevas.</p><code>flex-nowrap</code> <code>flex-wrap</code> <code>flex-wrap-reverse</code>",
+  },
+  content: {
+    en: "<p>Controls the spacing between multiple lines of frogs.</p><code>content-start</code> <code>content-end</code> <code>content-center</code> <code>content-between</code> <code>content-around</code> <code>content-evenly</code> <code>content-stretch</code>",
+    es: "<p>Controla el espacio entre múltiples líneas de ranas.</p><code>content-start</code> <code>content-end</code> <code>content-center</code> <code>content-between</code> <code>content-around</code> <code>content-evenly</code> <code>content-stretch</code>",
   },
 };

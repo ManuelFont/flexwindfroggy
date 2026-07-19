@@ -2,8 +2,8 @@ var levels = [
   {
     name: "justify-content 1",
     instructions: {
-      en: "<p>Welcome to Flexwind Froggy, a game where you help Froggy and friends by writing Tailwind CSS classes! Guide this frog to the lilypad on the right using the following utility classes:</p><ul><li><code>justify-start</code>: Items align to the left side of the container.</li><li><code>justify-end</code>: Items align to the right side of the container.</li><li><code>justify-center</code>: Items align at the center of the container.</li><li><code>justify-between</code>: Items display with equal spacing between them.</li><li><code>justify-around</code>: Items display with equal spacing around them.</li></ul><p>For example, <code>justify-end</code> will move the frog to the right.</p>",
-      es: "<p>Bienvenido a Flexwind Froggy, un juego donde ayudarás a Froggy y a sus amigos escribiendo clases de Tailwind CSS. Guía a esta rana hacia la hoja de lirio en la derecha usando las siguientes clases utilitarias:</p><ul><li><code>justify-start</code>: Alinea elementos al lado izquierdo del contenedor.</li><li><code>justify-end</code>: Alinea elementos al lado derecho del contenedor.</li><li><code>justify-center</code>: Alinea elementos en el centro del contenedor.</li><li><code>justify-between</code>: Muestra elementos con la misma distancia entre ellos.</li><li><code>justify-around</code>: Muestra elementos con la misma separación alrededor de ellos.</li></ul><p>Por ejemplo, <code>justify-end</code> moverá la rana a la derecha.</p>",
+      en: "<p>Welcome to Flexwind Froggy, where you help Froggy and friends with Tailwind CSS classes. Move this frog to the lilypad on the right. Need a clue? Click <code>justify</code> to explore the relevant utilities.</p>",
+      es: "<p>Bienvenido a Flexwind Froggy, donde ayudarás a Froggy y a sus amigos con clases utilitarias de Tailwind. Lleva esta rana a la hoja de lirio de la derecha. ¿Necesitas una pista? Haz clic en <code>justify</code> para explorar las utilidades relevantes.</p>",
     },
     board: "g",
     style: { "justify-content": "flex-end" },
@@ -13,8 +13,8 @@ var levels = [
   {
     name: "justify-content 2",
     instructions: {
-      en: "<p>Use Tailwind CSS utility classes again to help these frogs get to their lilypads. These classes align items horizontally:</p><ul><li><code>justify-start</code>: Items align to the left side of the container.</li><li><code>justify-end</code>: Items align to the right side of the container.</li><li><code>justify-center</code>: Items align at the center of the container.</li><li><code>justify-between</code>: Items display with equal spacing between them.</li><li><code>justify-around</code>: Items display with equal spacing around them.</li></ul>",
-      es: "<p>Nuevamente, utiliza clases utilitarias de Tailwind CSS para ayudar a esas ranas a llegar a sus hojas de lirio. Estas clases alinean elementos horizontalmente:</p><ul><li><code>justify-start</code>: Alinea elementos al lado izquierdo del contenedor.</li><li><code>justify-end</code>: Alinea elementos al lado derecho del contenedor.</li><li><code>justify-center</code>: Alinea elementos en el centro del contenedor.</li><li><code>justify-between</code>: Muestra elementos con la misma distancia entre ellos.</li><li><code>justify-around</code>: Muestra elementos con la misma separación alrededor de ellos.</li></ul>",
+      en: "<p>Use a Tailwind utility to guide these frogs to their lilypads. Click <code>justify</code> if you want to review the utility family.</p>",
+      es: "<p>Usa una utilidad de Tailwind para guiar a estas ranas hasta sus hojas de lirio. Haz clic en <code>justify</code> si quieres repasar la familia de utilidades.</p>",
     },
     board: "gy",
     style: { "justify-content": "center" },
@@ -24,8 +24,8 @@ var levels = [
   {
     name: "justify-content 3",
     instructions: {
-      en: "<p>Help all three frogs find their lilypads using Tailwind CSS utility classes. This time, the lilypads have lots of space all around them.</p><p>If you find yourself forgetting the available utility classes, you can click on the justify hint to view them. Try clicking on <code>justify</code>.</p>",
-      es: '<p>Ayuda a las tres ranas a encontrar sus hojas de lirio usando clases utilitarias de Tailwind CSS. En esta oportunidad, las hojas de lirio tienen mucho espacio a su alrededor.</p><p>Si no recuerdas las clases utilitarias disponibles, puedes hacer click sobre la sugerencia de "justify" e inmediatamente se mostrarán. Prueba hacer click sobre <code>justify</code>.</p>',
+      en: "<p>Help all three frogs find their lilypads with Tailwind utilities. This time, the lilypads have plenty of space around them. Click <code>justify</code> for a hint.</p>",
+      es: "<p>Ayuda a las tres ranas a encontrar sus hojas de lirio con utilidades de Tailwind. Esta vez, las hojas de lirio tienen mucho espacio a su alrededor. Haz clic en <code>justify</code> para ver una pista.</p>",
     },
     board: "gyr",
     style: { "justify-content": "space-around" },
@@ -35,8 +35,8 @@ var levels = [
   {
     name: "justify-content 4",
     instructions: {
-      en: "<p>Now the lilypads on the edges have drifted to the shore, increasing the space between them. Use a <code>justify</code> Tailwind CSS utility class to give the lilypads equal spacing between them.</p>",
-      es: "<p>Ahora las hojas de lirio de los bordes se han desplazado a un costado, aumentando así el espacio entre ellas. Usa una de las clases <code>justify</code> de Tailwind CSS para darles el mismo espacio entre ellas.</p>",
+      en: "<p>The lilypads on the edges have drifted to the shore, increasing the space between them. Use a <code>justify</code> utility to make the spacing between frogs even.</p>",
+      es: "<p>Ahora las hojas de lirio de los bordes se han desplazado a un costado, aumentando así el espacio entre ellas. Usa una de las clases <code>justify</code> de Tailwind CSS para darles el mismo espacio a las ranas.</p>",
     },
     board: "gyr",
     style: { "justify-content": "space-between" },
@@ -46,8 +46,8 @@ var levels = [
   {
     name: "align-items 1",
     instructions: {
-      en: "<p>Now use Tailwind CSS utility classes to help the frogs get to the bottom of the pond. These classes align items vertically:</p><ul><li><code>items-start</code>: Items align to the top of the container.</li><li><code>items-end</code>: Items align to the bottom of the container.</li><li><code>items-center</code>: Items align at the vertical center of the container.</li><li><code>items-baseline</code>: Items display at the baseline of the container.</li><li><code>items-stretch</code>: Items are stretched to fit the container.</li></ul>",
-      es: "<p>Ahora usa clases utilitarias de Tailwind CSS para ayudar a las ranas a llegar al fondo del estanque. Estas clases alinean elementos verticalmente:</p><ul><li><code>items-start</code>: Alinea elementos a la parte superior del contenedor.</li><li><code>items-end</code>: Alinea elementos a la parte inferior del contenedor.</li><li><code>items-center</code>: Alinea elementos en el centro (verticalmente hablando) del contenedor.</li><li><code>items-baseline</code>: Muestra elementos en la línea base del contenedor.</li><li><code>items-stretch</code>: Estira los elementos para ajustarlos al contenedor.</li></ul>",
+      en: "<p>Use a Tailwind utility to help the frogs reach the bottom of the pond. Click <code>items</code> to explore the utilities that control this direction.</p>",
+      es: "<p>Usa una utilidad de Tailwind para ayudar a las ranas a llegar al fondo del estanque. Haz clic en <code>items</code> para explorar las utilidades que controlan esta dirección.</p>",
     },
     board: "gyr",
     style: { "align-items": "flex-end" },
@@ -57,8 +57,8 @@ var levels = [
   {
     name: "align-items 2",
     instructions: {
-      en: "<p>Lead the frog to the center of the pond using a combination of <code>justify-content</code> and <code>align-items</code>.</p>",
-      es: "<p>Mueve la rana al centro del estanque, usando una combinación de <code>justify-content</code> y <code>align-items</code>.</p>",
+      en: "<p>Lead the frog to the center of the pond. Combine utilities from <code>justify</code> and <code>items</code>.</p>",
+      es: "<p>Lleva la rana al centro del estanque. Combina utilidades de <code>justify</code> e <code>items</code>.</p>",
     },
     board: "g",
     style: { "justify-content": "center", "align-items": "center" },
@@ -68,8 +68,8 @@ var levels = [
   {
     name: "align-items 3",
     instructions: {
-      en: "<p>The frogs need to cross the pond again, this time for some lilypads with plenty of space around them. Use a combination of <code>justify-content</code> and <code>align-items</code>.</p>",
-      es: "<p>Nuevamente, las ranas necesitan cruzar el estanque. En esta oportunidad, las hojas de lirio tienen mucho espacio alrededor de ellas. Debes usar una combinación de <code>justify-content</code> y <code>align-items</code>.</p>",
+      en: "<p>The frogs need to cross the pond again, this time to lilypads with plenty of room around them. Combine <code>justify</code> and <code>items</code> utilities.</p>",
+      es: "<p>Las ranas deben cruzar el estanque otra vez, ahora hacia hojas de lirio con mucho espacio alrededor. Combina utilidades de <code>justify</code> e <code>items</code>.</p>",
     },
     board: "gyr",
     style: { "justify-content": "space-around", "align-items": "flex-end" },
@@ -79,8 +79,8 @@ var levels = [
   {
     name: "flex-direction 1",
     instructions: {
-      en: "<p>The frogs need to get in the same order as their lilypads using <code>flex-direction</code>. This CSS property defines the direction items are placed in the container, and accepts the following values:</p><ul><li><code>row</code>: Items are placed the same as the text direction.</li><li><code>row-reverse</code>: Items are placed opposite to the text direction.</li><li><code>column</code>: Items are placed top to bottom.</li><li><code>column-reverse</code>: Items are placed bottom to top.</li></ul>",
-      es: "<p>Las ranas necesitan ponerse en el mismo orden que sus hojas de lirio usando <code>flex-direction</code>. Esta propiedad CSS define la dirección de los elementos en el contenedor, y acepta los siguientes valores:</p><ul><li><code>row</code>: Elementos son colocados en la misma dirección del texto.</li><li><code>row-reverse</code>: Elementos son colocados en la dirección opuesta al texto.</li><li><code>column</code>: Elementos se colocan de arriba hacia abajo.</li><li><code>column-reverse</code>: Elementos se colocan de abajo hacia arriba.</li></ul>",
+      en: "<p>Get the frogs into the same order as their lilypads by changing the layout direction. Click <code>flex</code> for a hint.</p>",
+      es: "<p>Coloca las ranas en el mismo orden que sus hojas de lirio cambiando la dirección del diseño. Haz clic en <code>flex</code> para ver una pista.</p>",
     },
     board: "gyr",
     style: { "flex-direction": "row-reverse" },
@@ -90,8 +90,8 @@ var levels = [
   {
     name: "flex-direction 2",
     instructions: {
-      en: "<p>Help the frogs find their column of lilypads using <code>flex-direction</code>. This CSS property defines the direction items are placed in the container, and accepts the following values:</p><ul><li><code>row</code>: Items are placed the same as the text direction.</li><li><code>row-reverse</code>: Items are placed opposite to the text direction.</li><li><code>column</code>: Items are placed top to bottom.</li><li><code>column-reverse</code>: Items are placed bottom to top.</li></ul>",
-      es: "<p>Ayuda a las ranas a encontrar su hoja de lirio en la columna usando <code>flex-direction</code>. Esta propiedad CSS define la dirección de los elementos en el contenedor, y acepta los siguientes valores:</p><ul><li><code>row</code>: Elementos son colocados en la misma dirección del texto.</li><li><code>row-reverse</code>: Elementos son colocados en la dirección opuesta al texto.</li><li><code>column</code>: Elementos se colocan de arriba hacia abajo.</li><li><code>column-reverse</code>: Elementos se colocan de abajo hacia arriba.</li></ul>",
+      en: "<p>Help the frogs find their column of lilypads by changing the layout direction. Click <code>flex</code> for a hint.</p>",
+      es: "<p>Ayuda a las ranas a encontrar su columna de hojas de lirio cambiando la dirección del diseño. Haz clic en <code>flex</code> para ver una pista.</p>",
     },
     board: "gyr",
     style: { "flex-direction": "column" },
@@ -101,8 +101,8 @@ var levels = [
   {
     name: "flex-direction 3",
     instructions: {
-      en: "<p>Help the frogs get to their own lilypads. Although they seem close, it will take both <code>flex-direction</code> and <code>justify-content</code> to get them there.</p><p>Notice that when you set the direction to a reversed row or column, start and end are also reversed.</p>",
-      es: "<p>Ayuda a las ranas a llegar a sus hojas de lirio. A pesar de que ellas parecen estar cerca, necesitarás usar <code>flex-direction</code> y <code>justify-content</code> para llegar hasta allí.</p><p>Nota que cuando estableces la dirección a una fila invertida o columna, el inicio y el final también se invierten.</p>",
+      en: "<p>Help the frogs reach their own lilypads. You will need utilities from both <code>flex</code> and <code>justify</code>. Reversing the direction also reverses where start and end appear.</p>",
+      es: "<p>Ayuda a las ranas a llegar a sus propias hojas de lirio. Necesitarás utilidades de <code>flex</code> y <code>justify</code>. Invertir la dirección también invierte dónde aparecen el inicio y el final.</p>",
     },
     board: "gyr",
     style: { "flex-direction": "row-reverse", "justify-content": "flex-end" },
@@ -112,8 +112,8 @@ var levels = [
   {
     name: "flex-direction 4",
     instructions: {
-      en: "<p>Help the frogs find their lilypads using <code>flex-direction</code> and <code>justify-content</code>.</p><p>Notice that when the flex direction is a column, <code>justify-content</code> changes to the vertical and <code>align-items</code> to the horizontal.</p>",
-      es: "<p>Ayuda a las ranas a encontrar sus hojas de lirio usando <code>flex-direction</code> y <code>justify-content</code>.</p><p>Nota que cuando es una columna, <code>justify-content</code> cambia a vertical y <code>align-items</code> a horizontal.</p>",
+      en: "<p>Help the frogs find their lilypads using <code>flex</code> and <code>justify</code> utilities. In a column layout, the main axis runs vertically.</p>",
+      es: "<p>Ayuda a las ranas a encontrar sus hojas de lirio usando utilidades de <code>flex</code> y <code>justify</code>. En un diseño de columna, el eje principal es vertical.</p>",
     },
     board: "gyr",
     style: { "flex-direction": "column", "justify-content": "flex-end" },
@@ -123,8 +123,8 @@ var levels = [
   {
     name: "flex-direction 5",
     instructions: {
-      en: "<p>Help the frogs find their lilypads using <code>flex-direction</code> and <code>justify-content</code>.</p>",
-      es: "<p>Ayuda a las ranas a encontrar sus hojas de lirio usando <code>flex-direction</code> y <code>justify-content</code>.</p>",
+      en: "<p>Help the frogs find their lilypads using <code>flex</code> and <code>justify</code> utilities.</p>",
+      es: "<p>Ayuda a las ranas a encontrar sus hojas de lirio usando utilidades de <code>flex</code> y <code>justify</code>.</p>",
     },
     board: "gyr",
     style: {
@@ -137,8 +137,8 @@ var levels = [
   {
     name: "flex-direction 6",
     instructions: {
-      en: "<p>Help the frogs find their lilypads using <code>flex-direction</code>, <code>justify-content</code>, and <code>align-items</code>.</p>",
-      es: "<p>Ayuda a las ranas a encontrar sus hojas de lirio usando <code>flex-direction</code>, <code>justify-content</code>, y <code>align-items</code>.</p>",
+      en: "<p>Help the frogs find their lilypads using utilities from <code>flex</code>, <code>justify</code>, and <code>items</code>.</p>",
+      es: "<p>Ayuda a las ranas a encontrar sus hojas de lirio usando utilidades de <code>flex</code>, <code>justify</code> e <code>items</code>.</p>",
     },
     board: "gyr",
     style: {
@@ -152,8 +152,8 @@ var levels = [
   {
     name: "order 1",
     instructions: {
-      en: "<p>Sometimes reversing the row or column order of a container is not enough. In these cases, we can apply the <code>order</code> property to individual items. By default, items have a value of 0, but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2).</p><p>Use the <code>order</code> property to reorder the frogs according to their lilypads.</p>",
-      es: "<p>A veces, invertir el orden de una fila o columna de un contenedor no es suficiente. En esos casos, nosotros podemos aplicar la propiedad <code>order</code> a elementos individuales. Por defecto, los elementos tienen un valor 0, pero nosotros podemos usar esta propiedad para establecerlo a un número entero positivo o negativo.</p><p>Usa la propiedad <code>order</code> para reordenar las ranas de acuerdo a sus hojas de lirio.</p>",
+      en: "<p>Changing the whole layout direction is not always enough. Use an <code>order</code> utility on an individual frog to match the lilypad order. Click the hint to explore the available utilities.</p>",
+      es: "<p>Cambiar toda la dirección del diseño no siempre es suficiente. Usa una utilidad de <code>order</code> en una rana individual para que coincida con el orden de las hojas de lirio. Haz clic en la pista para explorar las utilidades disponibles.</p>",
     },
     board: "gyr",
     selector: "> :nth-child(2)",
@@ -165,8 +165,8 @@ var levels = [
   {
     name: "order 2",
     instructions: {
-      en: "<p>Use the <code>order</code> property to send the red frog to his lilypad.</p>",
-      es: "<p>Usa la propiedad <code>order</code> para enviar la rana de color rojo a su hoja de lirio.</p>",
+      en: "<p>Use an <code>order</code> utility to send the red frog to its lilypad.</p>",
+      es: "<p>Usa una utilidad de <code>order</code> para enviar la rana roja a su hoja de lirio.</p>",
     },
     board: "gggrg",
     selector: "> :nth-child(4)",
@@ -178,8 +178,8 @@ var levels = [
   {
     name: "align-self 1",
     instructions: {
-      en: "<p>Another property you can apply to individual items is <code>align-self</code>. This property accepts the same values as <code>align-items</code> and its value for the specific item.</p>",
-      es: "<p>Otra propiedad que puedes aplicar a elementos individuales es <code>align-self</code>. Esta propiedad acepta los mismos valores de <code>align-items</code> y sus valores son usados para un elemento específico</p>",
+      en: "<p>You can also control one frog's position across the layout without moving the others. Click <code>self</code> to explore the relevant utilities.</p>",
+      es: "<p>También puedes controlar la posición de una sola rana a través del diseño sin mover a las demás. Haz clic en <code>self</code> para explorar las utilidades relevantes.</p>",
     },
     board: "ggygg",
     selector: "> :nth-child(3)",
@@ -191,8 +191,8 @@ var levels = [
   {
     name: "align-self 2",
     instructions: {
-      en: "<p>Combine <code>order</code> with <code>align-self</code> to help the frogs to their destinations.</p>",
-      es: "<p>Combina <code>order</code> con <code>align-self</code> para ayudar a las ranas a llegar a sus destinos.</p>",
+      en: "<p>Combine <code>order</code> and <code>self</code> utilities to help the frogs reach their destinations.</p>",
+      es: "<p>Combina utilidades de <code>order</code> y <code>self</code> para ayudar a las ranas a llegar a sus destinos.</p>",
     },
     board: "ygygg",
     selector: "> .yellow",
@@ -204,8 +204,8 @@ var levels = [
   {
     name: "flex-wrap 1",
     instructions: {
-      en: "<p>Oh no! The frogs are all squeezed onto a single row of lilypads. Spread them out using the <code>flex-wrap</code> property, which accepts the following values:</p><ul><li><code>nowrap</code>: Every item is fit to a single line.</li><li><code>wrap</code>: Items wrap around to additional lines.</li><li><code>wrap-reverse</code>: Items wrap around to additional lines in reverse.</li></ul>",
-      es: "<p>¡Oh, no! Todas las ranas están apretadas en una sola fila de hojas de lirio. Manos a la obra, vamos a distribuirlas correctamente usando la propiedad <code>flex-wrap</code>, la cual acepta los siguientes valores:</p><ul><li><code>nowrap</code>: Cada elemento se ajusta en una sola línea.</li><li><code>wrap</code>: los elementos se envuelven alrededor de líneas adicionales.</li><li><code>wrap-reverse</code>: Los elementos se envuelven alrededor de líneas adicionales en reversa.</li></ul>",
+      en: "<p>Oh no! The frogs are squeezed onto one row of lilypads. Spread them onto new lines with a <code>wrap</code> utility.</p>",
+      es: "<p>¡Oh, no! Las ranas están apretadas en una sola fila de hojas de lirio. Distribúyelas en líneas nuevas con una utilidad de <code>wrap</code>.</p>",
     },
     board: "ygggggr",
     style: { "flex-wrap": "wrap" },
@@ -215,8 +215,8 @@ var levels = [
   {
     name: "flex-wrap 2",
     instructions: {
-      en: "<p>Help this army of frogs form three orderly columns using a combination of <code>flex-direction</code> and <code>flex-wrap</code>.</p>",
-      es: "<p>Ayuda a este ejército de ranas a ordenarse en tres columnas usando una combinación de <code>flex-direction</code> y <code>flex-wrap</code>.</p>",
+      en: "<p>Help this army of frogs form three orderly columns using a combination of <code>flex</code> and <code>wrap</code> utilities.</p>",
+      es: "<p>Ayuda a este ejército de ranas a formar tres columnas ordenadas usando una combinación de utilidades de <code>flex</code> y <code>wrap</code>.</p>",
     },
     board: "gggggrrrrryyyyy",
     style: { "flex-direction": "column", "flex-wrap": "wrap" },
@@ -226,8 +226,8 @@ var levels = [
   {
     name: "flex-flow 1",
     instructions: {
-      en: "<p>The two properties <code>flex-direction</code> and <code>flex-wrap</code> are used so often together that the shorthand property <code>flex-flow</code> was created to combine them. This shorthand property accepts the value of the two properties separated by a space.</p><p>For example, you can use <code>flex-flow: row wrap</code> to set rows and wrap them.</p><p>Try using <code>flex-flow</code> to repeat the previous level.</p>",
-      es: "<p>Las dos propiedades <code>flex-direction</code> y <code>flex-wrap</code> son usadas a menudo en conjunto con la propiedad abreviada <code>flex-flow</code>, la cual fue creada para combinarlas. Esta propiedad abreviada, acepta un valor de cada una separada por un espacio.</p><p>Por ejemplo, puedes usar <code>flex-flow</code> para establecer filas y envolverlas.</p><p>Trata de usar <code>flex-flow</code> para volver a realizar el nivel anterior.</p>",
+      en: "<p>Tailwind keeps direction and wrapping as separate utilities. Combine <code>flex</code> and <code>wrap</code> utilities to repeat the previous level.</p>",
+      es: "<p>Tailwind mantiene la dirección y el ajuste como utilidades separadas. Combina utilidades de <code>flex</code> y <code>wrap</code> para repetir el nivel anterior.</p>",
     },
     board: "gggggrrrrryyyyy",
     style: { "flex-flow": "column wrap" },
@@ -237,8 +237,8 @@ var levels = [
   {
     name: "align-content 1",
     instructions: {
-      en: "<p>The frogs are spread all over the pond, but the lilypads are bunched at the top. You can use <code>align-content</code> to set how multiple lines are spaced apart from each other. This property takes the following values:</p><ul><li><code>flex-start</code>: Lines are packed at the top of the container.</li><li><code>flex-end</code>: Lines are packed at the bottom of the container.</li><li><code>center</code>: Lines are packed at the vertical center of the container.</li><li><code>space-between</code>: Lines display with equal spacing between them.</li><li><code>space-around</code>: Lines display with equal spacing around them.</li><li><code>stretch</code>: Lines are stretched to fit the container.</li></ul><p>This can be confusing, but <code>align-content</code> determines the spacing between lines, while <code>align-items</code> determines how the items as a whole are aligned within the container. When there is only one line, <code>align-content</code> has no effect.</p>",
-      es: "<p>Las ranas están repartidas por todo el estanque, pero las hojas de lirio están agrupadas en la parte superior. Puedes usar <code>align-content</code> para establecer como múltiples líneas están separadas una de otra. Esta propiedad acepta los siguientes valores:</p><ul><li><code>flex-start</code>: Las líneas se posicionan en la parte superior del contenedor.</li><li><code>flex-end</code>: Las líneas se posicionan en la parte inferior del contenedor.</li><li><code>center</code>: Las líneas se posicionan en el centro (verticalmente hablando) del contenedor.</li><li><code>space-between</code>: Las líneas se muestran con la misma distancia entre ellas.</li><li><code>space-around</code>: Las líneas se muestran con la misma separación alrededor de ellas.</li><li><code>stretch</code>: Las líneas se estiran para ajustarse al contenedor.</li></ul><p>Esto puede ser confuso, pero <code>align-content</code> determina el espacio entre las líneas, mientras que <code>align-items</code> determina como los elementos en su conjunto están alineados dentro del contenedor. Cuando hay solo una línea, <code>align-content</code> no tiene efecto.</p>",
+      en: "<p>The frogs are spread across the pond, but the lilypads are bunched at the top. Use a <code>content</code> utility to control the spacing between the frog lines. This only affects layouts with more than one line.</p>",
+      es: "<p>Las ranas están repartidas por el estanque, pero las hojas de lirio están agrupadas arriba. Usa una utilidad de <code>content</code> para controlar el espacio entre las líneas de ranas. Solo afecta diseños con más de una línea.</p>",
     },
     board: "ggggggggggggggg",
     classes: { "#pond, #background": "wrap" },
@@ -249,8 +249,8 @@ var levels = [
   {
     name: "align-content 2",
     instructions: {
-      en: "<p>Now the current has bunched the lilypads at the bottom. Use <code>align-content</code> to guide the frogs there.</p>",
-      es: "<p>Ahora, la corriente ha agrupado las hojas de lirio en la parte inferior. Usa <code>align-content</code> para guiar las ranas hasta allí.</p>",
+      en: "<p>Now the current has bunched the lilypads at the bottom. Use a <code>content</code> utility to guide the frogs there.</p>",
+      es: "<p>Ahora, la corriente ha agrupado las hojas de lirio en la parte inferior. Usa una utilidad de <code>content</code> para guiar las ranas hasta allí.</p>",
     },
     board: "ggggggggggggggg",
     classes: { "#pond, #background": "wrap" },
@@ -261,8 +261,8 @@ var levels = [
   {
     name: "align-content 3",
     instructions: {
-      en: "<p>The frogs have had a party, but it is time to go home. Use a combination of <code>flex-direction</code> and <code>align-content</code> to get them to their lilypads.</p>",
-      es: "<p>Las ranas han tenido una fiesta, pero es momento de volver a casa. Usa una combinación de <code>flex-direction</code> y <code>align-content</code> para llevarlas a sus hojas de lirio.</p>",
+      en: "<p>The frogs have had a party, but it is time to go home. Combine <code>flex</code> and <code>content</code> utilities to get them to their lilypads.</p>",
+      es: "<p>Las ranas han tenido una fiesta, pero es momento de volver a casa. Combina utilidades de <code>flex</code> y <code>content</code> para llevarlas a sus hojas de lirio.</p>",
     },
     board: "rgggyrgggyrgggy",
     classes: { "#pond, #background": "wrap" },
@@ -273,8 +273,8 @@ var levels = [
   {
     name: "align-content 4",
     instructions: {
-      en: "<p>Bring the frogs home one last time by using the CSS properties you've learned:</p><ul><li><code>justify-content</code></li><li><code>align-items</code></li><li><code>flex-direction</code></li><li><code>order</code></li><li><code>align-self</code></li><li><code>flex-wrap</code></li><li><code>flex-flow</code></li><li><code>align-content</code></li></ul>",
-      es: "<p>Trae a las ranas a su casa una vez más usando las propiedades CSS que aprendiste:</p><ul><li><code>justify-content</code></li><li><code>align-items</code></li><li><code>flex-direction</code></li><li><code>order</code></li><li><code>align-self</code></li><li><code>flex-wrap</code></li><li><code>flex-flow</code></li><li><code>align-content</code></li></ul>",
+      en: "<p>Bring the frogs home one last time with the Tailwind utility families you have learned:</p><ul><li><code>justify</code></li><li><code>items</code></li><li><code>flex</code></li><li><code>order</code></li><li><code>self</code></li><li><code>wrap</code></li><li><code>content</code></li></ul>",
+      es: "<p>Trae a las ranas a casa una última vez con las familias de utilidades de Tailwind que has aprendido:</p><ul><li><code>justify</code></li><li><code>items</code></li><li><code>flex</code></li><li><code>order</code></li><li><code>self</code></li><li><code>wrap</code></li><li><code>content</code></li></ul>",
     },
     board: "rggggyy",
     style: {
