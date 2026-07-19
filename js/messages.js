@@ -12,8 +12,8 @@ var messages = {
     'es': 'Flexwind Froggy es una creación de',
   },
   labelBasedOn: {
-    'en': 'Based on Flexbox Froggy by Thomas Park',
-    'es': 'Basado en Flexbox Froggy de Thomas Park',
+    'en': 'Based on <a href="https://flexboxfroggy.com/" target="_blank" rel="noopener noreferrer">Flexbox Froggy</a> by Thomas Park',
+    'es': 'Basado en <a href="https://flexboxfroggy.com/" target="_blank" rel="noopener noreferrer">Flexbox Froggy</a> de Thomas Park',
   },
   labelLicense: {
     'en': 'MIT License',

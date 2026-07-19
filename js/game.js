@@ -485,7 +485,7 @@ var game = {
         var text = messages[label][game.language] || messages[label].en;
 	  }
 
-      $('#' + label).text(text);
+      $('#' + label).html(text);
     });
   },
 
