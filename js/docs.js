@@ -23,7 +23,7 @@ var docs = {
     en: "<p>Specifies whether flex items are forced on a single line or can be wrapped on multiple lines.</p><code>nowrap (default)</code> <code>wrap</code> <code>wrap-reverse</code>",
     es: "<p>Especifica si los elementos flex son forzados a una sola línea o pueden ser envueltos en multiples líneas.</p><code>nowrap (default)</code> <code>wrap</code> <code>wrap-reverse</code>",
   },
-  "justify hint": {
+  justify: {
     en: "<p>Aligns flex items along the main axis.</p><code>flex-start (default)</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code>",
     es: "<p>Alinea los elementos flex a lo largo del eje principal.</p><code>flex-start (default)</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code>",
   },

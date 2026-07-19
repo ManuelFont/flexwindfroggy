@@ -24,8 +24,8 @@ var levels = [
   {
     name: "justify-content 3",
     instructions: {
-      en: "<p>Help all three frogs find their lilypads using Tailwind CSS utility classes. This time, the lilypads have lots of space all around them.</p><p>If you find yourself forgetting the available utility classes, you can click on the justify hint to view them. Try clicking on <code>justify hint</code>.</p>",
-      es: "<p>Ayuda a las tres ranas a encontrar sus hojas de lirio usando clases utilitarias de Tailwind CSS. En esta oportunidad, las hojas de lirio tienen mucho espacio a su alrededor.</p><p>Si no recuerdas las clases utilitarias disponibles, puedes hacer click sobre la sugerencia de justify hint e inmediatamente se mostrarán. Prueba hacer click en el cursor sobre <code>justify hint</code>.</p>",
+      en: "<p>Help all three frogs find their lilypads using Tailwind CSS utility classes. This time, the lilypads have lots of space all around them.</p><p>If you find yourself forgetting the available utility classes, you can click on the justify hint to view them. Try clicking on <code>justify</code>.</p>",
+      es: '<p>Ayuda a las tres ranas a encontrar sus hojas de lirio usando clases utilitarias de Tailwind CSS. En esta oportunidad, las hojas de lirio tienen mucho espacio a su alrededor.</p><p>Si no recuerdas las clases utilitarias disponibles, puedes hacer click sobre la sugerencia de "justify" e inmediatamente se mostrarán. Prueba hacer click sobre <code>justify</code>.</p>',
     },
     board: "gyr",
     style: { "justify-content": "space-around" },
@@ -35,8 +35,8 @@ var levels = [
   {
     name: "justify-content 4",
     instructions: {
-      en: "<p>Now the lilypads on the edges have drifted to the shore, increasing the space between them. Use a Tailwind CSS utility class (<code>justify hint</code>) to give the lilypads equal spacing between them.</p>",
-      es: "<p>Ahora las hojas de lirio de los bordes se han desplazado a un costado, aumentando así el espacio entre ellas. Usa una de las clases de Tailwind CSS (<code>justify hint</code>) para darles el mismo espacio entre ellas.</p>",
+      en: "<p>Now the lilypads on the edges have drifted to the shore, increasing the space between them. Use a <code>justify</code> Tailwind CSS utility class to give the lilypads equal spacing between them.</p>",
+      es: "<p>Ahora las hojas de lirio de los bordes se han desplazado a un costado, aumentando así el espacio entre ellas. Usa una de las clases <code>justify</code> de Tailwind CSS para darles el mismo espacio entre ellas.</p>",
     },
     board: "gyr",
     style: { "justify-content": "space-between" },
