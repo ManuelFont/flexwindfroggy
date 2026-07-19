@@ -10,6 +10,14 @@ var game = {
   clickedCode: null,
 
   start: function () {
+    var inputFormat = "tailwind-utilities-v1";
+    if (localStorage.inputFormat !== inputFormat) {
+      // CSS declaration answers cannot be safely interpreted as Tailwind utilities.
+      game.answers = {};
+      game.solved = [];
+      localStorage.setItem("inputFormat", inputFormat);
+    }
+
     // navigator.language can include '-'
     // ref: https://developer.mozilla.org/en-US/docs/Web/API/NavigatorLanguage/language
     var requestLang = window.navigator.language.split("-")[0];
@@ -398,18 +406,9 @@ var game = {
             })
             .appendTo($("#instructions"));
 
-          var getDefaultPropVal = (pValue) => {
-            if (pValue == "<integer>") return "0";
-            else if (pValue == "<flex-direction>") return "row nowrap";
-
-            return pValue;
-          };
-
           $("#instructions .tooltip code").on("click", function (event) {
-            var pName = text;
-            var pValue = event.target.textContent.split(" ")[0];
-            pValue = getDefaultPropVal(pValue);
-            game.writeCSS(pName, pValue);
+            var utility = event.target.textContent.split(" ")[0];
+            game.writeUtility(utility);
 
             game.check();
           });
@@ -421,9 +420,21 @@ var game = {
 
   applyStyles: function () {
     var level = levels[game.level];
-    var code = $("#code").val();
     var selector = level.selector || "";
-    $("#pond " + selector).attr("style", code);
+    var utilities = $("#code")
+      .val()
+      .trim()
+      .split(/\s+/)
+      .filter(Boolean);
+    var styles = {};
+
+    utilities.forEach(function (utility) {
+      if (tailwindUtilities[utility]) {
+        Object.assign(styles, tailwindUtilities[utility]);
+      }
+    });
+
+    $("#pond " + selector).attr("style", "").css(styles);
     game.saveAnswer();
   },
 
@@ -548,45 +559,21 @@ var game = {
     };
   },
 
-  writeCSS: function (pName, pValue) {
-    var tokens = $("#code")
-      .val()
-      .trim()
-      .split(/[\n:;]+/)
-      .filter((i) => i);
-    var keywords = Object.keys(docs);
-    var content = "";
-    var filled = false;
+  writeUtility: function (utility) {
+    if (!tailwindUtilities[utility]) return;
 
-    // Do nothing when click property name inside Tooltip
-    if (keywords.includes(pValue)) return;
+    var utilityProperties = Object.keys(tailwindUtilities[utility]);
+    var tokens = $("#code").val().trim().split(/\s+/).filter(Boolean);
+    var filteredTokens = tokens.filter(function (token) {
+      if (!tailwindUtilities[token]) return true;
 
-    tokens.forEach(function (token, i) {
-      var trimmedToken = token.trim();
-      if (!keywords.includes(trimmedToken)) {
-        return;
-      }
-
-      var append = content !== "" ? "\n" : "";
-      if (trimmedToken === pName && !filled) {
-        filled = true;
-        append += trimmedToken + ": " + pValue + ";";
-      } else if (i + 1 < tokens.length) {
-        var val = !keywords.includes(tokens[i + 1].trim())
-          ? tokens[i + 1].trim()
-          : ""; // TODO: Maybe prop value validiation required
-        append += trimmedToken + ": " + val + ";";
-      }
-
-      content += append;
+      return !Object.keys(tailwindUtilities[token]).some(function (property) {
+        return utilityProperties.includes(property);
+      });
     });
 
-    if (!filled) {
-      content += content !== "" ? "\n" : "";
-      content += pName + ": " + pValue + ";";
-    }
-
-    $("#code").val(content);
+    filteredTokens.push(utility);
+    $("#code").val(filteredTokens.join(" "));
     $("#code").focus();
   },
 };
