@@ -16,6 +16,9 @@ var game = {
       game.language = requestLang;
       window.location.hash = requestLang;
     }
+    if (!messages.languageActive.hasOwnProperty(game.language)) {
+      game.language = 'en';
+    }
 
     game.translate();
     $('#level-counter .total').text(levels.length);
@@ -173,11 +176,12 @@ var game = {
       localStorage.setItem('solved', JSON.stringify(game.solved));
       localStorage.setItem('colorblind', JSON.stringify(game.colorblind));
     }).on('hashchange', function() {
-      game.language = window.location.hash.substring(1) || 'en';
+      var requestedLanguage = window.location.hash.substring(1);
+      game.language = messages.languageActive.hasOwnProperty(requestedLanguage) ? requestedLanguage : 'en';
       game.translate();
 
       $('#tweet iframe').remove();
-      var html = '<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="https://flexboxfroggy.com" data-via="thomashpark">Tweet</a> ' +
+      var html = '<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="https://flexwindfroggy.com" data-via="thomashpark">Tweet</a> ' +
                  '<a href="https://twitter.com/thomashpark" class="twitter-follow-button" data-show-count="false">Follow @thomashpark</a>';
       $('#tweet').html(html);
 
@@ -481,7 +485,7 @@ var game = {
         var text = messages[label][game.language] || messages[label].en;
 	  }
 
-      $('#' + label).text(text);
+      $('#' + label).html(text);
     });
   },
 

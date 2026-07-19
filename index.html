@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Flexbox Froggy - A game for learning CSS flexbox</title>
+    <title>Flexwind Froggy - A game for learning Tailwind flex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:url"           content="https://flexboxfroggy.com">
+    <meta property="og:url"           content="https://flexwindfroggy.com">
     <meta property="og:type"          content="website">
-    <meta property="og:title"         content="Flexbox Froggy">
-    <meta property="og:description"   content="A game for learning CSS flexbox">
-    <meta property="og:image"         content="https://flexboxfroggy.com/images/screenshot.png">
+    <meta property="og:title"         content="Flexwind Froggy">
+    <meta property="og:description"   content="A game for learning Tailwind flex utilities">
+    <meta property="og:image"         content="https://flexwindfroggy.com/images/screenshot.png">
     <meta property="fb:app_id"        content="916849395036923">
-    <meta name="twitter:url"          content="https://flexboxfroggy.com">
-    <meta name="twitter:title"        content="Flexbox Froggy">
-    <meta name="twitter:description"  content="A game for learning CSS flexbox">
-    <meta name="twitter:image"        content="https://flexboxfroggy.com/images/screenshot.png">
+    <meta name="twitter:url"          content="https://flexwindfroggy.com">
+    <meta name="twitter:title"        content="Flexwind Froggy">
+    <meta name="twitter:description"  content="A game for learning Tailwind flex utilities">
+    <meta name="twitter:image"        content="https://flexwindfroggy.com/images/screenshot.png">
     <meta name="google-adsense-account" content="ca-pub-9569380550956585">
+    <link rel="icon" href="./favicon.ico?v=1" type="image/x-icon">    
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans|Fredoka+One|Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
@@ -23,7 +24,7 @@
     <section id="sidebar">
       <div class="header">
         <div>
-          <h1 class="title">Flexbox Froggy</h1>
+          <h1 class="title">Flexwind Froggy</h1>
         </div>
         <div id="level-counter">
           <span class="arrow left">
@@ -47,7 +48,7 @@
       </div>
       <p id="instructions"></p>
       <div id="editor">
-        <div id="css">
+        <div id="tailwind">
           <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
           <pre id="before"></pre>
           <textarea id="code" autofocus autocapitalize="none" spellcheck="false"></textarea>
@@ -73,11 +74,10 @@
       </div>
 
       <div class="credits">
-        <span id="labelFooter" class="translate">Flexbox Froggy is created by</span>
-        <a href="https://codepip.com">Codepip</a> •
-        <a href="https://youtube.com/codepip">YouTube</a> •
-        <a href="https://twitter.com/playcodepip">Twitter</a> •
-        <a href="https://github.com/thomaspark/flexboxfroggy/">GitHub</a> •
+        <span id="labelFooter" class="translate">Flexwind Froggy is created by</span>
+        Manuel Font •
+        <a href="https://github.com/ManuelFont">GitHub</a> •
+        <a href="https://www.linkedin.com/in/manuel-font-/">LinkedIn</a>
         <span id="settings">
           <span id="labelSettings" class="toggle translate">Settings</span>
           <span class="tooltip">
@@ -86,58 +86,6 @@
               <select id="language">
                 <option value="en">English</option>
                 <option value="es">Español</option>
-                <option value="fr">Français</option>
-                <option value="de">Deutsch</option>
-                <option value="nl">Nederlands</option>
-                <option value="pt-br">Português</option>
-                <option value="ca">Català</option>
-                <option value="gl">Galego</option>
-                <option value="it">Italiano</option>
-                <option value="sv">Svenska</option>
-                <option value="no">Norsk</option>
-                <option value="fi">Suomi</option>
-                <option value="da">Dansk</option>
-                <option value="pl">Polski</option>
-                <option value="cs">Česky</option>
-                <option value="sk">Slovenčina</option>
-                <option value="hu">Magyar</option>
-                <option value="ro">Română</option>
-                <option value="bg">Български</option>
-                <option value="et">Eesti</option>
-                <option value="lv">Latviešu</option>
-                <option value="lt">Lietuvių</option>
-                <option value="uk">Українська</option>
-                <option value="ru">Русский</option>
-                <option value="sr">Српски</option>
-                <option value="bs">Bosanski</option>
-                <option value="hr">Hrvatski</option>
-                <option value="mk">Македонски</option>
-                <option value="mn">Монгол хэл</option>
-                <option value="el">Ελληνικά</option>
-                <option value="tr">Türkçe</option>
-                <option value="az">Azərbaycanca</option>
-                <option value="he">עברית</option>
-                <option value="ar">العربية</option>
-                <option value="fa">فارسی</option>
-                <option value="hi">हिंदी</option>
-                <option value="bn">বাংলা</option>
-                <option value="te">తెలుగు</option>
-                <option value="ta">தமிழ்</option>
-                <option value="gj">ગુજરાતી</option>
-                <option value="si">සිංහල</option>
-                <option value="ml">മലയാളം</option>
-                <option value="np">नेपाली</option>
-                <option value="zh-cn">简体中文</option>
-                <option value="zh-tw">繁體中文</option>
-                <option value="ja">日本語</option>
-                <option value="ko">한국어</option>
-                <option value="vi">Tiếng Việt</option>
-                <option value="th">ภาษาไทย</option>
-                <option value="my">မြန်မာ</option>
-                <option value="id">Bahasa Indonesia</option>
-                <option value="af">Afrikaans</option>
-                <option value="yo">Yoruba</option>
-                <option value="eo">Esperanto</option>
               </select>
             </section>
             <section>
@@ -175,10 +123,10 @@
         </span>
       </div>
       <div class="credits" style="margin-bottom: 1rem;">
-        <span id="gridGarden" class="translate">Want to learn more CSS? Play</span> <a href="https://codepip.com/games/grid-garden/">Grid Garden</a> or <a href="https://codepip.com/games/anchoreum/">Anchoreum</a>.
+        <span id="labelAttribution" class="translate">Original <a href="https://flexboxfroggy.com/" target="_blank" rel="noopener noreferrer">Flexbox Froggy</a> and artwork by Thomas Park · <a href="LICENSE">MIT License</a> · <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>.</span>
       </div>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9569380550956585" crossorigin="anonymous"></script>
-      <!-- Flexbox Froggy Banner -->
+      <!-- Flexwind Froggy Banner -->
       <ins class="adsbygoogle"
            style="display:inline-block;width:728px;height:90px;max-width:100%;margin-inline:auto"
            data-ad-client="ca-pub-9569380550956585"
@@ -211,4 +159,3 @@
     </script>
   </body>
 </html>
-
