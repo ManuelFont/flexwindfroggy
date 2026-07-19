@@ -1,8 +1,91 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tailwind Flex Gap | Flexwind Froggy</title><meta name="description" content="Learn Tailwind CSS gap, gap-x, and gap-y utilities for spacing flex items without margins."><link rel="canonical" href="https://flexwindfroggy.com/learn/gap.html"><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/learn.css"></head>
-<body><header class="site-header"><div class="site-header__inner"><a class="brand" href="../index.html">Flexwind Froggy</a><nav class="site-nav" aria-label="Primary"><a href="../index.html">Play</a><a href="gap.html">Learn</a><a href="../privacy.html">Privacy</a></nav></div></header><main><p class="eyebrow">Tailwind Flexbox lesson</p><h1>Space items with gap</h1><p class="lead"><code>gap-*</code> adds space between flex or grid children. It is usually clearer and more reliable than adding margins to every item.</p><h2>Utilities</h2><table class="utility-table"><thead><tr><th>Class</th><th>What it does</th></tr></thead><tbody><tr><td><code>gap-4</code></td><td>Adds the same spacing in both directions.</td></tr><tr><td><code>gap-x-6</code></td><td>Adds horizontal spacing only.</td></tr><tr><td><code>gap-y-2</code></td><td>Adds vertical spacing only.</td></tr><tr><td><code>gap-0</code></td><td>Removes gaps.</td></tr></tbody></table><h2>Try it</h2><p>Use one gap utility on the parent instead of remembering special first- or last-child margin rules.</p><pre><code>&lt;div class="flex flex-wrap gap-x-6 gap-y-3"&gt;
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind Flex Gap | Flexwind Froggy</title>
+    <meta
+      name="description"
+      content="Learn Tailwind CSS gap, gap-x, and gap-y utilities for spacing flex items without margins."
+    />
+    <link rel="canonical" href="https://flexwindfroggy.com/learn/gap.html" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/learn.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">Flexwind Froggy</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html">Play</a><a href="gap.html">Learn</a
+          ><a href="../privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <p class="eyebrow">Tailwind Flexbox lesson</p>
+      <h1>Space items with gap</h1>
+      <p class="lead">
+        <code>gap-*</code> adds space between flex or grid children. It is
+        usually clearer and more reliable than adding margins to every item.
+      </p>
+      <h2>Utilities</h2>
+      <table class="utility-table">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>gap-4</code></td>
+            <td>Adds the same spacing in both directions.</td>
+          </tr>
+          <tr>
+            <td><code>gap-x-6</code></td>
+            <td>Adds horizontal spacing only.</td>
+          </tr>
+          <tr>
+            <td><code>gap-y-2</code></td>
+            <td>Adds vertical spacing only.</td>
+          </tr>
+          <tr>
+            <td><code>gap-0</code></td>
+            <td>Removes gaps.</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Try it</h2>
+      <p>
+        Use Tailwind gap utility on the parent container to create consistent
+        spacing between its children, instead of adding special margins to
+        individual children.
+      </p>
+      <pre><code>&lt;div class="flex flex-wrap gap-x-6 gap-y-3"&gt;
   &lt;a href="#"&gt;Guides&lt;/a&gt;
   &lt;a href="#"&gt;Examples&lt;/a&gt;
   &lt;a href="#"&gt;About&lt;/a&gt;
-&lt;/div&gt;</code></pre><aside class="callout"><strong>Choose the scale intentionally:</strong> Tailwind’s spacing scale gives a shared rhythm to your interface. Start with a small gap, then increase it only when grouping needs to feel looser.</aside><p><a class="cta" href="../index.html">Practice in Flexwind Froggy</a></p><h2>More flexbox lessons</h2><ul class="lesson-links"><li><a href="direction.html">Flex direction</a></li><li><a href="justify.html">Justify content</a></li><li><a href="items.html">Align items</a></li><li><a href="wrap.html">Wrap items</a></li></ul></main><footer class="site-footer">Flexwind Froggy is a free Tailwind CSS Flexbox learning game.</footer></body></html>
+&lt;/div&gt;</code></pre>
+      <aside class="callout">
+        <strong>Choose the scale intentionally:</strong> Tailwind’s spacing
+        scale gives a shared rhythm to your interface. Start with a small gap,
+        then increase it only when grouping needs to feel looser.
+      </aside>
+      <p><a class="cta" href="../index.html">Practice in Flexwind Froggy</a></p>
+      <h2>More flexbox lessons</h2>
+      <ul class="lesson-links">
+        <li><a href="direction.html">Flex direction</a></li>
+        <li><a href="justify.html">Justify content</a></li>
+        <li><a href="items.html">Align items</a></li>
+        <li><a href="wrap.html">Wrap items</a></li>
+      </ul>
+    </main>
+    <footer class="site-footer">
+      Flexwind Froggy is a free Tailwind CSS Flexbox learning game.
+    </footer>
+  </body>
+</html>

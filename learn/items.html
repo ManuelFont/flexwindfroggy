@@ -1,7 +1,92 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tailwind Align Items | Flexwind Froggy</title><meta name="description" content="Learn Tailwind CSS align-items utilities: items-start, items-center, items-end, items-stretch, and items-baseline."><link rel="canonical" href="https://flexwindfroggy.com/learn/items.html"><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/learn.css"></head>
-<body><header class="site-header"><div class="site-header__inner"><a class="brand" href="../index.html">Flexwind Froggy</a><nav class="site-nav" aria-label="Primary"><a href="../index.html">Play</a><a href="items.html">Learn</a><a href="../privacy.html">Privacy</a></nav></div></header><main><p class="eyebrow">Tailwind Flexbox lesson</p><h1>Align items across the axis</h1><p class="lead"><code>items-*</code> controls the cross axis: the axis perpendicular to the direction. In a normal row, it moves items vertically.</p><h2>Utilities</h2><table class="utility-table"><thead><tr><th>Class</th><th>What it does</th></tr></thead><tbody><tr><td><code>items-start</code></td><td>Aligns children at the cross-axis start.</td></tr><tr><td><code>items-center</code></td><td>Centers children across the cross axis.</td></tr><tr><td><code>items-end</code></td><td>Aligns children at the cross-axis end.</td></tr><tr><td><code>items-stretch</code></td><td>Stretches eligible children to fill the cross axis.</td></tr><tr><td><code>items-baseline</code></td><td>Aligns text baselines.</td></tr></tbody></table><h2>Try it</h2><p>To center an icon beside a label of any height, use a flex row with <code>items-center</code>.</p><pre><code>&lt;button class="flex items-center gap-2"&gt;
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind Align Items | Flexwind Froggy</title>
+    <meta
+      name="description"
+      content="Learn Tailwind CSS align-items utilities: items-start, items-center, items-end, items-stretch, and items-baseline."
+    />
+    <link rel="canonical" href="https://flexwindfroggy.com/learn/items.html" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/learn.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">Flexwind Froggy</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html">Play</a><a href="items.html">Learn</a
+          ><a href="../privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <p class="eyebrow">Tailwind Flexbox lesson</p>
+      <h1>Align items across the axis</h1>
+      <p class="lead">
+        <code>items-*</code> controls the cross axis: the axis perpendicular to
+        the direction. In a normal row, it moves items vertically.
+      </p>
+      <h2>Utilities</h2>
+      <table class="utility-table">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>items-start</code></td>
+            <td>Aligns children at the cross-axis start.</td>
+          </tr>
+          <tr>
+            <td><code>items-center</code></td>
+            <td>Centers children across the cross axis.</td>
+          </tr>
+          <tr>
+            <td><code>items-end</code></td>
+            <td>Aligns children at the cross-axis end.</td>
+          </tr>
+          <tr>
+            <td><code>items-stretch</code></td>
+            <td>Stretches eligible children to fill the cross axis.</td>
+          </tr>
+          <tr>
+            <td><code>items-baseline</code></td>
+            <td>Aligns text baselines.</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Try it</h2>
+      <p>
+        To center an icon beside a label of any height, use a flex row with
+        <code>items-center</code>.
+      </p>
+      <pre><code>&lt;button class="flex items-center gap-2"&gt;
   &lt;svg aria-hidden="true"&gt;...&lt;/svg&gt;
   Save changes
-&lt;/button&gt;</code></pre><aside class="callout"><strong>Remember:</strong> <code>justify-center</code> and <code>items-center</code> together center children in both directions—but only once the parent has a meaningful width and height.</aside><p><a class="cta" href="../index.html">Practice in Flexwind Froggy</a></p><h2>More flexbox lessons</h2><ul class="lesson-links"><li><a href="direction.html">Flex direction</a></li><li><a href="justify.html">Justify content</a></li><li><a href="wrap.html">Wrap items</a></li><li><a href="gap.html">Add gaps</a></li></ul></main><footer class="site-footer">Flexwind Froggy is a free Tailwind CSS Flexbox learning game.</footer></body></html>
+&lt;/button&gt;</code></pre>
+      <aside class="callout">
+        <strong>Remember:</strong> <code>justify-center</code> and
+        <code>items-center</code> together center children in both directions.
+      </aside>
+      <p><a class="cta" href="../index.html">Practice in Flexwind Froggy</a></p>
+      <h2>More flexbox lessons</h2>
+      <ul class="lesson-links">
+        <li><a href="direction.html">Flex direction</a></li>
+        <li><a href="justify.html">Justify content</a></li>
+        <li><a href="wrap.html">Wrap items</a></li>
+        <li><a href="gap.html">Add gaps</a></li>
+      </ul>
+    </main>
+    <footer class="site-footer">
+      Flexwind Froggy is a free Tailwind CSS Flexbox learning game.
+    </footer>
+  </body>
+</html>
