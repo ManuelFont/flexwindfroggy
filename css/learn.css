@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 1.6;
+  color: #183228;
+  background: #f4faf3;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+a { color: #176b3a; }
+
+.site-header {
+  background: #2e9e4d;
+  color: #fff;
+  padding: 1rem 1.25rem;
+}
+
+.site-header__inner, main, .site-footer {
+  width: min(100% - 2.5rem, 860px);
+  margin: 0 auto;
+}
+
+.brand { color: #fff; font-family: "Fredoka One", cursive; font-size: 1.35rem; text-decoration: none; }
+.site-nav { display: flex; flex-wrap: wrap; gap: .75rem 1rem; margin-top: .5rem; }
+.site-nav a { color: #effff2; }
+
+main { padding: 3rem 0; }
+h1, h2 { color: #22763b; line-height: 1.2; }
+h1 { font-family: "Fredoka One", cursive; font-size: clamp(2rem, 6vw, 3.25rem); margin: 0 0 1rem; }
+h2 { margin-top: 2.25rem; }
+.eyebrow { color: #327446; font-weight: bold; margin-bottom: .35rem; text-transform: uppercase; letter-spacing: .06em; }
+.lead { font-size: 1.18rem; max-width: 44rem; }
+.callout { background: #e0f3e1; border-left: 4px solid #35a852; border-radius: .25rem; margin: 1.5rem 0; padding: 1rem 1.25rem; }
+pre { background: #163725; border-radius: .5rem; color: #edfff0; overflow-x: auto; padding: 1rem 1.25rem; }
+code { font-family: "Source Code Pro", monospace; }
+.utility-table { border-collapse: collapse; width: 100%; }
+.utility-table th, .utility-table td { border-bottom: 1px solid #c7ddca; padding: .75rem; text-align: left; vertical-align: top; }
+.utility-table th { color: #1e6132; }
+.lesson-links { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); list-style: none; padding: 0; }
+.lesson-links a { background: #fff; border: 1px solid #c7ddca; border-radius: .5rem; display: block; font-weight: bold; padding: .9rem; text-decoration: none; }
+.lesson-links a:hover, .lesson-links a:focus { background: #e0f3e1; }
+.cta { background: #2e9e4d; border-radius: .5rem; color: white; display: inline-block; font-weight: bold; padding: .75rem 1rem; text-decoration: none; }
+.site-footer { border-top: 1px solid #c7ddca; padding: 1.5rem 0 2.5rem; }
+
+@media (min-width: 640px) {
+  .site-header__inner { align-items: center; display: flex; justify-content: space-between; }
+  .site-nav { margin-top: 0; }
+}

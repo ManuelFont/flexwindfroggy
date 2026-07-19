@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tailwind Flex Direction: row and column | Flexwind Froggy</title>
+  <meta name="description" content="Learn Tailwind CSS flex direction utilities: flex-row, flex-row-reverse, flex-col, and flex-col-reverse.">
+  <link rel="canonical" href="https://flexwindfroggy.com/learn/direction.html">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/learn.css">
+</head>
+<body>
+  <header class="site-header"><div class="site-header__inner"><a class="brand" href="../index.html">Flexwind Froggy</a><nav class="site-nav" aria-label="Primary"><a href="../index.html">Play</a><a href="direction.html">Learn</a><a href="../privacy.html">Privacy</a></nav></div></header>
+  <main>
+    <p class="eyebrow">Tailwind Flexbox lesson</p><h1>Choose the flex direction</h1>
+    <p class="lead">A flex container lays its children out in a row by default. Tailwind’s direction utilities let you choose whether the main axis runs across or down the page.</p>
+    <h2>Utilities</h2><table class="utility-table"><thead><tr><th>Class</th><th>What it does</th></tr></thead><tbody><tr><td><code>flex-row</code></td><td>Places items from left to right.</td></tr><tr><td><code>flex-row-reverse</code></td><td>Places items from right to left.</td></tr><tr><td><code>flex-col</code></td><td>Stacks items from top to bottom.</td></tr><tr><td><code>flex-col-reverse</code></td><td>Stacks items from bottom to top.</td></tr></tbody></table>
+    <h2>Try it</h2><p>Add <code>flex</code> to the parent, then use <code>flex-col</code> when a card, menu, or toolbar needs a vertical stack.</p><pre><code>&lt;div class="flex flex-col gap-4"&gt;
+  &lt;header&gt;Title&lt;/header&gt;
+  &lt;main&gt;Content&lt;/main&gt;
+  &lt;footer&gt;Actions&lt;/footer&gt;
+&lt;/div&gt;</code></pre>
+    <aside class="callout"><strong>Axis reminder:</strong> with <code>flex-row</code>, horizontal space is the main axis. With <code>flex-col</code>, vertical space becomes the main axis. That changes how <code>justify-*</code> utilities behave.</aside>
+    <p><a class="cta" href="../index.html">Practice in Flexwind Froggy</a></p><h2>More flexbox lessons</h2><ul class="lesson-links"><li><a href="justify.html">Justify content</a></li><li><a href="items.html">Align items</a></li><li><a href="wrap.html">Wrap items</a></li><li><a href="gap.html">Add gaps</a></li></ul>
+  </main><footer class="site-footer">Flexwind Froggy is a free Tailwind CSS Flexbox learning game.</footer>
+</body></html>
