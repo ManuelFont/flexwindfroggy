@@ -2,13 +2,7 @@
 
 ## Project purpose
 
-This is a small browser game for learning CSS Flexbox. The current version asks
-the player to enter ordinary CSS declarations, applies them to the frogs, and
-checks whether each frog overlaps the matching lilypad.
-
-The main product goal is to evolve the game so that it teaches Tailwind CSS
-utility classes instead of raw CSS declarations. Future changes should preserve
-the game’s educational, visual, and progressively leveled nature.
+This is a small browser game for learning Tailwind CSS Flexbox
 
 ## Runtime and architecture
 
