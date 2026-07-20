@@ -7,6 +7,10 @@ var messages = {
     en: "Next",
     es: "Siguiente",
   },
+  learn: {
+    en: "Learn more",
+    es: "Aprende más",
+  },
   labelFooter: {
     en: 'Flexwind Froggy is an independent fork by Manuel Font • <a href="https://github.com/ManuelFont" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/manuel-font-/" target="_blank" rel="noopener noreferrer">LinkedIn</a> • <a href="privacy.html">Privacy Policy</a>',
     es: 'Flexwind Froggy es un fork independiente de Manuel Font • <a href="https://github.com/ManuelFont" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/manuel-font-/" target="_blank" rel="noopener noreferrer">LinkedIn</a> • <a href="privacy.html">Política de privacidad</a>',
@@ -28,8 +32,8 @@ var messages = {
     es: "de",
   },
   title: {
-    en: "Flexwind Froggy - A game for learning CSS flexbox",
-    es: "Flexwind Froggy - Un juego para aprender CSS flexbox",
+    en: "Flexwind Froggy - A game for learning Tailwind CSS Flexbox",
+    es: "Flexwind Froggy - Un juego para aprender Flexbox con Tailwind CSS",
   },
   labelReset: {
     en: "Reset",
@@ -40,34 +44,43 @@ var messages = {
     es: "¿Estás seguro de que quieres reiniciar el juego?\n\nTu progreso se perderá y serás enviado al inicio del juego.",
   },
   gridGarden: {
-    en: "Want to learn more CSS? Play",
+    en: "Want to learn more Tailwind CSS? Play",
+    es: "¿Quieres aprender más Tailwind CSS? Juega a",
   },
   labelLanguage: {
     en: "Language",
-    es: "Lengua",
+    es: "Idioma",
   },
   labelSettings: {
     en: "Settings",
+    es: "Configuración",
   },
   labelDifficulty: {
     en: "Difficulty",
+    es: "Dificultad",
   },
   labelColorblind: {
     en: "Colorblind Mode",
+    es: "Modo para daltónicos",
   },
   labelColorblindOff: {
     en: "Off",
+    es: "Desactivado",
   },
   labelColorblindOn: {
     en: "On",
+    es: "Activado",
   },
   labelDifficultyEasy: {
     en: "Beginner",
+    es: "Principiante",
   },
   labelDifficultyMedium: {
     en: "Intermediate - No Directions",
+    es: "Intermedio: sin instrucciones",
   },
   labelDifficultyHard: {
     en: "Expert - No Directions & Random Levels",
+    es: "Experto: sin instrucciones y niveles aleatorios",
   },
 };

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="google-adsense-account" content="ca-pub-5896187408169408" />
+    <script src="../js/lesson-ads.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="itemsTitle" class="translate">Tailwind Align Items | Flexwind Froggy</title>
+    <meta
+      id="itemsDescription" class="translate" name="description"
+      content="Learn Tailwind CSS align-items utilities: items-start, items-center, items-end, items-stretch, and items-baseline."
+    />
+    <link rel="canonical" href="https://flexwindfroggy.com/learn/items.html" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/learn.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">Flexwind Froggy</a>
+        <nav id="navLabel" class="site-nav translate" aria-label="Primary">
+          <a id="navPlay" class="translate" href="../index.html">Play</a><a id="navLearn" class="translate" href="items.html">Learn</a
+          ><a id="navPrivacy" class="translate" href="../privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <p id="eyebrow" class="eyebrow translate">Tailwind Flexbox lesson</p>
+      <h1 id="itemsHeading" class="translate">Align items across the axis</h1>
+      <p id="itemsLead" class="lead translate">
+        <code>items-*</code> controls the cross axis: the axis perpendicular to
+        the direction. In a normal row, it moves items vertically.
+      </p>
+      <h2 id="utilities" class="translate">Utilities</h2>
+      <table class="utility-table">
+        <thead>
+          <tr>
+            <th id="classHeading" class="translate">Class</th>
+            <th id="whatItDoes" class="translate">What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>items-start</code></td>
+            <td id="itemsStart" class="translate">Aligns children at the cross-axis start.</td>
+          </tr>
+          <tr>
+            <td><code>items-center</code></td>
+            <td id="itemsCenter" class="translate">Centers children across the cross axis.</td>
+          </tr>
+          <tr>
+            <td><code>items-end</code></td>
+            <td id="itemsEnd" class="translate">Aligns children at the cross-axis end.</td>
+          </tr>
+          <tr>
+            <td><code>items-stretch</code></td>
+            <td id="itemsStretch" class="translate">Stretches eligible children to fill the cross axis.</td>
+          </tr>
+          <tr>
+            <td><code>items-baseline</code></td>
+            <td id="itemsBaseline" class="translate">Aligns text baselines.</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 id="tryIt" class="translate">Try it</h2>
+      <p id="itemsTry" class="translate">
+        To center an icon beside a label of any height, use a flex row with
+        <code>items-center</code>.
+      </p>
+      <pre><code>&lt;button class="flex items-center gap-2"&gt;
+  &lt;svg aria-hidden="true"&gt;...&lt;/svg&gt;
+  Save changes
+&lt;/button&gt;</code></pre>
+      <aside id="itemsCallout" class="callout translate">
+        <strong>Remember:</strong> <code>justify-center</code> and
+        <code>items-center</code> together center children in both directions.
+      </aside>
+      <p><a id="practice" class="cta translate" href="../index.html">Practice in Flexwind Froggy</a></p>
+      <h2 id="moreLessons" class="translate">More flexbox lessons</h2>
+      <ul class="lesson-links">
+        <li><a id="linkDirection" class="translate" href="direction.html">Flex direction</a></li>
+        <li><a id="linkJustify" class="translate" href="justify.html">Justify content</a></li>
+        <li><a id="linkWrap" class="translate" href="wrap.html">Wrap items</a></li>
+        <li><a id="linkGap" class="translate" href="gap.html">Add gaps</a></li>
+      </ul>
+    </main>
+    <footer id="footer" class="site-footer translate">
+      Flexwind Froggy is a free Tailwind CSS Flexbox learning game.
+    </footer>
+    <script src="../js/messages.js"></script><script src="../js/learn-messages.js"></script><script src="../js/translator.js"></script><script>translator.start(learnMessages);</script>
+  </body>
+</html>

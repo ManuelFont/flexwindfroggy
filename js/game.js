@@ -18,20 +18,7 @@ var game = {
       localStorage.setItem("inputFormat", inputFormat);
     }
 
-    // navigator.language can include '-'
-    // ref: https://developer.mozilla.org/en-US/docs/Web/API/NavigatorLanguage/language
-    var requestLang = window.navigator.language.split("-")[0];
-    if (
-      window.location.hash === "" &&
-      requestLang !== "en" &&
-      messages.languageActive.hasOwnProperty(requestLang)
-    ) {
-      game.language = requestLang;
-      window.location.hash = requestLang;
-    }
-    if (!messages.languageActive.hasOwnProperty(game.language)) {
-      game.language = "en";
-    }
+    game.language = translator.getInitialLanguage(messages.languageActive);
 
     game.translate();
     $("#level-counter .total").text(levels.length);
@@ -49,6 +36,10 @@ var game = {
   },
 
   setHandlers: function () {
+    $("#learn").on("click", function () {
+      window.location.assign("learn/direction.html");
+    });
+
     $("#next").on("click", function () {
       $("#code").focus();
 
@@ -191,12 +182,7 @@ var game = {
         localStorage.setItem("colorblind", JSON.stringify(game.colorblind));
       })
       .on("hashchange", function () {
-        var requestedLanguage = window.location.hash.substring(1);
-        game.language = messages.languageActive.hasOwnProperty(
-          requestedLanguage,
-        )
-          ? requestedLanguage
-          : "en";
+        game.language = translator.getLanguageFromHash(messages.languageActive);
         game.translate();
 
         $("#tweet iframe").remove();
@@ -513,8 +499,7 @@ var game = {
   },
 
   translate: function () {
-    document.title = messages.title[game.language] || messages.title.en;
-    $("html").attr("lang", game.language);
+    translator.translate(messages, game.language);
 
     var level = $("#editor").is(":visible") ? levels[game.level] : levelWin;
     var instructions =
@@ -522,14 +507,6 @@ var game = {
     $("#instructions").html(instructions);
     game.loadDocs();
 
-    $(".translate").each(function () {
-      var label = $(this).attr("id");
-      if (messages[label]) {
-        var text = messages[label][game.language] || messages[label].en;
-      }
-
-      $("#" + label).html(text);
-    });
   },
 
   debounce: function (func, wait, immediate) {
