@@ -2,7 +2,23 @@
 
 ## Project purpose
 
-This is a small browser game for learning Tailwind CSS Flexbox
+This is a small, static browser game for learning Tailwind CSS Flexbox.
+
+## Current product status and priorities
+
+The Tailwind teaching experience is mostly complete. Treat it as established
+product behavior: make focused improvements without reopening the earlier
+CSS-to-Tailwind migration unless a change genuinely requires it.
+
+Current work is primarily about:
+
+- small gameplay, UI, accessibility, and reliability improvements;
+- technical and on-page SEO;
+- retaining learners through a clear, fast, low-friction experience; and
+- preparing and maintaining the site for Google AdSense approval.
+
+Protect the game’s learning flow, fast static delivery, and existing visual
+identity while making these changes.
 
 ## Runtime and architecture
 
@@ -32,11 +48,14 @@ launch the website. The application depends on browser globals such as
 ## Important files
 
 - `index.html` — page structure, editor, controls, and game board containers.
-- `js/game.js` — initialization, event handlers, level rendering, CSS
-  application, answer checking, persistence, translations, and level changes.
+- `js/game.js` — initialization, event handlers, level rendering, Tailwind
+  utility application, answer checking, persistence, translations, and level
+  changes.
 - `js/levels.js` — level definitions. Each level includes a name, instructions,
-  board string, target style, and editable-code framing.
-- `js/docs.js` — localized Flexbox property help shown in tooltips.
+  board string, target utilities, and editable-code framing.
+- `js/tailwind-utilities.js` — supported Tailwind utility definitions and their
+  Flexbox behavior used by the game.
+- `js/docs.js` — localized Tailwind Flexbox utility help shown in tooltips.
 - `js/messages.js` — localized interface labels and messages.
 - `css/style.css` — layout, pond artwork, frogs, lilypads, tooltips, animations,
   and state classes.
@@ -56,39 +75,31 @@ game.start()
 ```
 
 `loadLevel()` creates frogs and lilypads from the level’s `board` string.
-`applyStyles()` currently places the player’s text into a frog element’s
-`style` attribute. `compare()` measures frog and lilypad positions and checks
-that matching colors occupy the same coordinates.
+`applyStyles()` parses the player’s supported Tailwind utility input and applies
+its Flexbox styles to the board. `compare()` measures frog and lilypad
+positions and checks that matching colors occupy the same coordinates.
 
-## Tailwind migration guidance
+## SEO, retention, and AdSense guidance
 
-The key conceptual change is the player input and style application:
-
-- Current input: declarations such as `justify-content: flex-end;`.
-- Intended input: Tailwind classes such as `justify-end`.
-
-When implementing this change, keep the position-based win check unless the
-game design intentionally changes. The board and visual styles should remain
-separate from the player’s Tailwind utilities.
-
-Likely migration touchpoints are:
-
-- `levels.js`: represent the expected Tailwind answer and the instructional
-  utility names/values.
-- `game.js`: apply player input as classes rather than an inline `style`
-  attribute, and validate or normalize utility-class input.
-- `docs.js`: document Tailwind utilities and their corresponding Flexbox
-  behavior.
-- `index.html`: update editor text, examples, and wording from CSS declarations
-  to utility classes.
-- `css/style.css`: retain custom game visuals; do not replace artwork and
-  animations with Tailwind utilities without a clear benefit.
-
-Tailwind is not currently installed or built in this repository. Adding it
-means choosing a build strategy and deciding whether generated utilities are
-loaded as a compiled stylesheet or whether a standalone/browser-oriented setup
-is appropriate. Avoid introducing a build pipeline incidentally; document the
-choice and update the run instructions when it is made.
+- Keep page content useful and original. Changes to titles, descriptions,
+  headings, explanatory copy, and internal links should accurately describe the
+  game and help a learner understand what it teaches.
+- Preserve semantic HTML, a single clear page topic, accessible labels, and
+  keyboard-friendly controls. Do not trade usability or performance for search
+  keywords.
+- Keep the static page quick to load. Avoid adding frameworks, trackers,
+  render-blocking assets, or a build pipeline for minor changes.
+- Treat ads as secondary to learning: do not let placements obscure the editor,
+  controls, board, instructions, navigation, or mobile content. Avoid deceptive
+  layouts, forced interactions, and other patterns that could harm users or
+  violate ad policies.
+- When adding AdSense or analytics snippets, load them only as needed, preserve
+  the game when third-party scripts fail, and document any consent, privacy, or
+  policy requirements introduced by the change.
+- For retention changes, prefer improvements that help users make progress:
+  clear next actions, useful feedback, saved progress, approachable difficulty,
+  and unobtrusive return cues. Keep progress storage backward-compatible where
+  practical.
 
 ## Working conventions
 
@@ -101,18 +112,21 @@ choice and update the run instructions when it is made.
 - Keep localization in `messages.js`, `docs.js`, and the level instruction data;
   do not add English-only UI text in event handlers.
 - Treat `localStorage` progress compatibility as a consideration when changing
-  answer formats. Old raw-CSS answers may need migration or safe invalidation
-  when the input format becomes Tailwind.
+  levels, input handling, or retention behavior.
+- Keep custom game visuals in `css/style.css`; player Tailwind utilities should
+  remain limited to the game’s supported learning surface.
 - Test changes in a browser, including typing, checking, retrying, advancing,
-  changing language, refreshing, and loading saved progress.
+  changing language, refreshing, loading saved progress, and relevant mobile
+  layouts. For SEO or third-party-script work, also verify the page without
+  JavaScript errors and with blocked/failed third-party requests.
 
 ## Recommended investigation order
 
 1. Read the relevant markup in `index.html`.
 2. Read `game.start()`, `setHandlers()`, and `loadLevel()` in `js/game.js`.
 3. Trace `applyStyles()` and `compare()` to understand how answers are judged.
-4. Inspect a few level objects in `js/levels.js`.
+4. Inspect a few level objects in `js/levels.js` and utilities in
+   `js/tailwind-utilities.js`.
 5. Inspect the corresponding selectors and state classes in `css/style.css`.
-
-Before changing the answer format, understand the complete path from textarea
-input to frog positioning to the success check.
+6. For SEO, retention, or ads, inspect the page head and supporting content in
+   `index.html` before adding scripts or markup.
