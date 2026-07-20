@@ -10,9 +10,12 @@
     var label = document.createElement("p");
     var ad = document.createElement("ins");
 
-    slot.className = "ad-slot ad-slot--lesson";
+    slot.id = "advertisementsLabel";
+    slot.className = "ad-slot ad-slot--lesson translate";
+    slot.dataset.translateAttribute = "aria-label";
     slot.setAttribute("aria-label", "Advertisements");
-    label.className = "ad-slot__label";
+    label.id = "advertisements";
+    label.className = "ad-slot__label translate";
     label.textContent = "Advertisements";
     ad.className = "adsbygoogle";
     ad.style.display = "block";
