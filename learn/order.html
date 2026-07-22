@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta name="google-adsense-account" content="ca-pub-5896187408169408" />
-    <script src="../js/lesson-ads.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title id="itemsTitle" class="translate">
-      Tailwind Align Items | Flexwind Froggy
+    <meta name="google-adsense-account" content="ca-pub-5896187408169408" />
+    <script src="../js/lesson-ads.js"></script>
+    <title id="orderTitle" class="translate">
+      Tailwind CSS Order Utilities | Flexwind Froggy
     </title>
     <meta
-      id="itemsDescription"
+      id="orderDescription"
       class="translate"
       name="description"
-      content="Learn Tailwind CSS align-items utilities: items-start, items-center, items-end, items-stretch, and items-baseline."
+      content="Learn how Tailwind CSS order utilities change the visual order of flex items without changing the HTML source order."
     />
-    <link rel="canonical" href="https://flexwindfroggy.com/learn/items.html" />
+    <link rel="canonical" href="https://flexwindfroggy.com/learn/order.html" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Source+Code+Pro&display=swap"
       rel="stylesheet"
@@ -27,7 +27,7 @@
         <a class="brand" href="../index.html">Flexwind Froggy</a>
         <nav id="navLabel" class="site-nav translate" aria-label="Primary">
           <a id="navPlay" class="translate" href="../index.html">Play</a
-          ><a id="navLearn" class="translate" href="items.html">Learn</a
+          ><a id="navLearn" class="translate" href="order.html">Learn</a
           ><a id="navPrivacy" class="translate" href="../privacy.html"
             >Privacy</a
           >
@@ -36,10 +36,11 @@
     </header>
     <main>
       <p id="eyebrow" class="eyebrow translate">Tailwind Flexbox lesson</p>
-      <h1 id="itemsHeading" class="translate">Align items across the axis</h1>
-      <p id="itemsLead" class="lead translate">
-        <code>items-*</code> controls the cross axis: the axis perpendicular to
-        the direction. In a normal row, it moves items vertically.
+      <h1 id="orderHeading" class="translate">Change the visual order</h1>
+      <p id="orderLead" class="lead translate">
+        <code>order-*</code> changes where a flex item appears among its
+        siblings. The HTML source stays in the same order, which is important
+        for reading and keyboard navigation.
       </p>
       <h2 id="utilities" class="translate">Utilities</h2>
       <table class="utility-table">
@@ -51,49 +52,45 @@
         </thead>
         <tbody>
           <tr>
-            <td><code>items-start</code></td>
-            <td id="itemsStart" class="translate">
-              Aligns children at the cross-axis start.
+            <td><code>order-first</code></td>
+            <td id="orderFirst" class="translate">
+              Places the item before every normal ordered item.
             </td>
           </tr>
           <tr>
-            <td><code>items-center</code></td>
-            <td id="itemsCenter" class="translate">
-              Centers children across the cross axis.
+            <td><code>order-last</code></td>
+            <td id="orderLast" class="translate">
+              Places the item after every normal ordered item.
             </td>
           </tr>
           <tr>
-            <td><code>items-end</code></td>
-            <td id="itemsEnd" class="translate">
-              Aligns children at the cross-axis end.
+            <td><code>order-none</code></td>
+            <td id="orderNone" class="translate">
+              Returns the item to the default order of zero.
             </td>
           </tr>
           <tr>
-            <td><code>items-stretch</code></td>
-            <td id="itemsStretch" class="translate">
-              Stretches eligible children to fill the cross axis.
+            <td><code>order-1</code></td>
+            <td id="orderOne" class="translate">
+              Sets an explicit order value of one.
             </td>
-          </tr>
-          <tr>
-            <td><code>items-baseline</code></td>
-            <td id="itemsBaseline" class="translate">Aligns text baselines.</td>
           </tr>
         </tbody>
       </table>
       <h2 id="tryIt" class="translate">Try it</h2>
-      <p id="itemsTry" class="translate">
-        To center an icon beside a label of any height, use a flex row with
-        <code>items-center</code>.
+      <p id="orderTry" class="translate">
+        Use order sparingly. It can help put a secondary panel after the main
+        content on small screens, while the document source remains logical.
       </p>
-      <pre><code>&lt;button class="flex items-center gap-2"&gt;
-  &lt;svg aria-hidden="true"&gt;...&lt;/svg&gt;
-  Save changes
-&lt;/button&gt;</code></pre>
-      <aside id="itemsCallout" class="callout translate">
-        <strong>Remember:</strong> <code>justify-center</code> and
-        <code>items-center</code> together center children in both directions.
+      <pre><code>&lt;section class="flex flex-col md:flex-row"&gt;
+  &lt;main class="order-1 md:order-none"&gt;Article&lt;/main&gt;
+  &lt;aside class="order-last"&gt;Related links&lt;/aside&gt;
+&lt;/section&gt;</code></pre>
+      <aside id="orderCallout" class="callout translate">
+        <strong>Accessibility note:</strong> visual order does not change
+        screen-reader or keyboard order. Keep the source order meaningful, then
+        use <code>order-*</code> only for presentation.
       </aside>
-
       <p>
         <a id="practice" class="cta translate" href="../index.html"
           >Practice in Flexwind Froggy</a
@@ -112,12 +109,12 @@
           >
         </li>
         <li>
+          <a id="linkItems" class="translate" href="items.html">Align items</a>
+        </li>
+        <li>
           <a id="linkWrap" class="translate" href="wrap.html">Wrap items</a>
         </li>
         <li><a id="linkGap" class="translate" href="gap.html">Add gaps</a></li>
-        <li>
-          <a id="linkOrder" class="translate" href="order.html">Order items</a>
-        </li>
         <li>
           <a id="linkSelf" class="translate" href="self.html">Align one item</a>
         </li>

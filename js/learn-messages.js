@@ -25,6 +25,9 @@ var learnMessages = {
   linkItems: { en: "Align items", es: "Alinear elementos" },
   linkWrap: { en: "Wrap items", es: "Ajustar elementos" },
   linkGap: { en: "Add gaps", es: "Añadir espacios" },
+  linkOrder: { en: "Order items", es: "Ordenar elementos" },
+  linkSelf: { en: "Align one item", es: "Alinear un elemento" },
+  linkContent: { en: "Align wrapped lines", es: "Alinear líneas ajustadas" },
   footer: {
     en: "Flexwind Froggy is a free Tailwind CSS Flexbox learning game.",
     es: "Flexwind Froggy es un juego gratuito para aprender Flexbox con Tailwind CSS.",
@@ -227,5 +230,130 @@ var learnMessages = {
   gapCallout: {
     en: "<strong>Choose the scale intentionally:</strong> Tailwind’s spacing scale gives a shared rhythm to your interface. Start with a small gap, then increase it only when grouping needs to feel looser.",
     es: "<strong>Elige la escala intencionalmente:</strong> la escala de espaciado de Tailwind tiene un ritmo uniforme. Empieza con un espacio pequeño y auméntalo solo cuando el grupo necesite estar más separado.",
+  },
+  orderTitle: {
+    en: "Tailwind CSS Order Utilities | Flexwind Froggy",
+    es: "Utilidades Order de Tailwind CSS | Flexwind Froggy",
+  },
+  orderDescription: {
+    en: "Learn how Tailwind CSS order utilities change the visual order of flex items without changing the HTML source order.",
+    es: "Aprende cómo las utilidades order de Tailwind CSS cambian el orden visual de los elementos flex sin cambiar el orden del HTML.",
+  },
+  orderHeading: { en: "Change the visual order", es: "Cambia el orden visual" },
+  orderLead: {
+    en: "<code>order-*</code> changes where a flex item appears among its siblings. The HTML source stays in the same order, which is important for reading and keyboard navigation.",
+    es: "<code>order-*</code> cambia dónde aparece un elemento flex entre sus hermanos. El orden del HTML se mantiene, algo importante para la lectura y la navegación con teclado.",
+  },
+  orderFirst: {
+    en: "Places the item before every normal ordered item.",
+    es: "Coloca el elemento antes de todos los elementos con orden normal.",
+  },
+  orderLast: {
+    en: "Places the item after every normal ordered item.",
+    es: "Coloca el elemento después de todos los elementos con orden normal.",
+  },
+  orderNone: {
+    en: "Returns the item to the default order of zero.",
+    es: "Devuelve el elemento al orden predeterminado, cero.",
+  },
+  orderOne: {
+    en: "Sets an explicit order value of one.",
+    es: "Establece un valor de orden explícito de uno.",
+  },
+  orderTry: {
+    en: "Use order sparingly. It can help put a secondary panel after the main content on small screens, while the document source remains logical.",
+    es: "Usa order con moderación. Puede ayudar a colocar un panel secundario después del contenido principal en pantallas pequeñas, mientras el documento conserva un orden lógico.",
+  },
+  orderCallout: {
+    en: "<strong>Accessibility note:</strong> visual order does not change screen-reader or keyboard order. Keep the source order meaningful, then use <code>order-*</code> only for presentation.",
+    es: "<strong>Nota de accesibilidad:</strong> el orden visual no cambia el orden del lector de pantalla ni del teclado. Mantén un orden significativo en el código y usa <code>order-*</code> solo para la presentación.",
+  },
+  selfTitle: {
+    en: "Tailwind CSS Align Self Utilities | Flexwind Froggy",
+    es: "Utilidades Align Self de Tailwind CSS | Flexwind Froggy",
+  },
+  selfDescription: {
+    en: "Learn Tailwind CSS self-start, self-center, self-end, self-stretch, and self-auto utilities for aligning one flex item.",
+    es: "Aprende las utilidades self-start, self-center, self-end, self-stretch y self-auto de Tailwind CSS para alinear un elemento flex.",
+  },
+  selfHeading: {
+    en: "Align one flex item",
+    es: "Alinea un solo elemento flex",
+  },
+  selfLead: {
+    en: "<code>self-*</code> lets one child override the container’s <code>items-*</code> alignment on the cross axis. It is useful when one item needs an intentional exception.",
+    es: "<code>self-*</code> permite que un hijo anule la alineación <code>items-*</code> del contenedor en el eje transversal. Es útil cuando un elemento necesita una excepción intencional.",
+  },
+  selfAuto: {
+    en: "Uses the container’s align-items value.",
+    es: "Usa el valor align-items del contenedor.",
+  },
+  selfStart: {
+    en: "Moves this item to the cross-axis start.",
+    es: "Mueve este elemento al inicio del eje transversal.",
+  },
+  selfCenter: {
+    en: "Centers this item on the cross axis.",
+    es: "Centra este elemento en el eje transversal.",
+  },
+  selfEnd: {
+    en: "Moves this item to the cross-axis end.",
+    es: "Mueve este elemento al final del eje transversal.",
+  },
+  selfStretch: {
+    en: "Stretches this item when its size allows it.",
+    es: "Estira este elemento cuando su tamaño lo permite.",
+  },
+  selfTry: {
+    en: "A message row can keep its avatar at the top while the action button is centered. Apply <code>self-start</code> only to the avatar instead of changing every child.",
+    es: "Una fila de mensajes puede mantener el avatar arriba mientras el botón de acción queda centrado. Aplica <code>self-start</code> solo al avatar en lugar de cambiar todos los hijos.",
+  },
+  selfCallout: {
+    en: "<strong>Choose the smallest scope:</strong> use <code>items-*</code> when all children share an alignment; use <code>self-*</code> for one deliberate exception.",
+    es: "<strong>Elige el alcance más pequeño:</strong> usa <code>items-*</code> cuando todos los hijos comparten una alineación; usa <code>self-*</code> para una excepción concreta.",
+  },
+  contentTitle: {
+    en: "Tailwind CSS Align Content Utilities | Flexwind Froggy",
+    es: "Utilidades Align Content de Tailwind CSS | Flexwind Froggy",
+  },
+  contentDescription: {
+    en: "Learn how Tailwind CSS content-start, content-center, content-between, and related utilities distribute wrapped flex lines.",
+    es: "Aprende cómo las utilidades content-start, content-center, content-between y relacionadas de Tailwind CSS distribuyen líneas flex ajustadas.",
+  },
+  contentHeading: {
+    en: "Distribute wrapped lines",
+    es: "Distribuye líneas ajustadas",
+  },
+  contentLead: {
+    en: "<code>content-*</code> distributes complete flex lines on the cross axis. It only has visible space to work with when the container wraps and has extra cross-axis room.",
+    es: "<code>content-*</code> distribuye líneas flex completas en el eje transversal. Solo tiene espacio visible para trabajar cuando el contenedor se ajusta y sobra espacio en el eje transversal.",
+  },
+  contentStart: {
+    en: "Packs wrapped lines at the cross-axis start.",
+    es: "Agrupa las líneas ajustadas al inicio del eje transversal.",
+  },
+  contentCenter: {
+    en: "Centers the group of wrapped lines.",
+    es: "Centra el grupo de líneas ajustadas.",
+  },
+  contentBetween: {
+    en: "Places the first and last lines at each edge.",
+    es: "Coloca la primera y la última línea en cada borde.",
+  },
+  contentAround: {
+    en: "Adds space around every wrapped line.",
+    es: "Añade espacio alrededor de cada línea ajustada.",
+  },
+  contentEvenly: {
+    en: "Makes the space between and around lines equal.",
+    es: "Iguala el espacio entre las líneas y a su alrededor.",
+  },
+  contentTry: {
+    en: "For a tall, wrapping badge collection, <code>content-center</code> can keep all rows together in the middle. Add <code>flex-wrap</code> and a height before judging the result.",
+    es: "En una colección alta de etiquetas que se ajusta, <code>content-center</code> puede mantener todas las filas juntas en el centro. Añade <code>flex-wrap</code> y una altura antes de evaluar el resultado.",
+  },
+  contentCallout: {
+    en: "<strong>Two different controls:</strong> <code>items-*</code> aligns items inside each line; <code>content-*</code> positions the lines as a group. With one line, <code>content-*</code> has no effect.",
+    es: "<strong>Dos controles distintos:</strong> <code>items-*</code> alinea los elementos dentro de cada línea; <code>content-*</code> posiciona las líneas como grupo. Con una sola línea, <code>content-*</code> no tiene efecto.",
   },
 };
