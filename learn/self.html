@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta name="google-adsense-account" content="ca-pub-5896187408169408" />
-    <script src="../js/lesson-ads.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title id="itemsTitle" class="translate">
-      Tailwind Align Items | Flexwind Froggy
+    <meta name="google-adsense-account" content="ca-pub-5896187408169408" />
+    <script src="../js/lesson-ads.js"></script>
+    <title id="selfTitle" class="translate">
+      Tailwind CSS Align Self Utilities | Flexwind Froggy
     </title>
     <meta
-      id="itemsDescription"
+      id="selfDescription"
       class="translate"
       name="description"
-      content="Learn Tailwind CSS align-items utilities: items-start, items-center, items-end, items-stretch, and items-baseline."
+      content="Learn Tailwind CSS self-start, self-center, self-end, self-stretch, and self-auto utilities for aligning one flex item."
     />
-    <link rel="canonical" href="https://flexwindfroggy.com/learn/items.html" />
+    <link rel="canonical" href="https://flexwindfroggy.com/learn/self.html" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Source+Code+Pro&display=swap"
       rel="stylesheet"
@@ -27,7 +27,7 @@
         <a class="brand" href="../index.html">Flexwind Froggy</a>
         <nav id="navLabel" class="site-nav translate" aria-label="Primary">
           <a id="navPlay" class="translate" href="../index.html">Play</a
-          ><a id="navLearn" class="translate" href="items.html">Learn</a
+          ><a id="navLearn" class="translate" href="self.html">Learn</a
           ><a id="navPrivacy" class="translate" href="../privacy.html"
             >Privacy</a
           >
@@ -36,10 +36,11 @@
     </header>
     <main>
       <p id="eyebrow" class="eyebrow translate">Tailwind Flexbox lesson</p>
-      <h1 id="itemsHeading" class="translate">Align items across the axis</h1>
-      <p id="itemsLead" class="lead translate">
-        <code>items-*</code> controls the cross axis: the axis perpendicular to
-        the direction. In a normal row, it moves items vertically.
+      <h1 id="selfHeading" class="translate">Align one flex item</h1>
+      <p id="selfLead" class="lead translate">
+        <code>self-*</code> lets one child override the container’s
+        <code>items-*</code> alignment on the cross axis. It is useful when one
+        item needs an intentional exception.
       </p>
       <h2 id="utilities" class="translate">Utilities</h2>
       <table class="utility-table">
@@ -51,49 +52,53 @@
         </thead>
         <tbody>
           <tr>
-            <td><code>items-start</code></td>
-            <td id="itemsStart" class="translate">
-              Aligns children at the cross-axis start.
+            <td><code>self-auto</code></td>
+            <td id="selfAuto" class="translate">
+              Uses the container’s align-items value.
             </td>
           </tr>
           <tr>
-            <td><code>items-center</code></td>
-            <td id="itemsCenter" class="translate">
-              Centers children across the cross axis.
+            <td><code>self-start</code></td>
+            <td id="selfStart" class="translate">
+              Moves this item to the cross-axis start.
             </td>
           </tr>
           <tr>
-            <td><code>items-end</code></td>
-            <td id="itemsEnd" class="translate">
-              Aligns children at the cross-axis end.
+            <td><code>self-center</code></td>
+            <td id="selfCenter" class="translate">
+              Centers this item on the cross axis.
             </td>
           </tr>
           <tr>
-            <td><code>items-stretch</code></td>
-            <td id="itemsStretch" class="translate">
-              Stretches eligible children to fill the cross axis.
+            <td><code>self-end</code></td>
+            <td id="selfEnd" class="translate">
+              Moves this item to the cross-axis end.
             </td>
           </tr>
           <tr>
-            <td><code>items-baseline</code></td>
-            <td id="itemsBaseline" class="translate">Aligns text baselines.</td>
+            <td><code>self-stretch</code></td>
+            <td id="selfStretch" class="translate">
+              Stretches this item when its size allows it.
+            </td>
           </tr>
         </tbody>
       </table>
       <h2 id="tryIt" class="translate">Try it</h2>
-      <p id="itemsTry" class="translate">
-        To center an icon beside a label of any height, use a flex row with
-        <code>items-center</code>.
+      <p id="selfTry" class="translate">
+        A message row can keep its avatar at the top while the action button is
+        centered. Apply <code>self-start</code> only to the avatar instead of
+        changing every child.
       </p>
-      <pre><code>&lt;button class="flex items-center gap-2"&gt;
-  &lt;svg aria-hidden="true"&gt;...&lt;/svg&gt;
-  Save changes
-&lt;/button&gt;</code></pre>
-      <aside id="itemsCallout" class="callout translate">
-        <strong>Remember:</strong> <code>justify-center</code> and
-        <code>items-center</code> together center children in both directions.
+      <pre><code>&lt;div class="flex items-center gap-3"&gt;
+  &lt;img class="self-start" src="avatar.png" alt="Ava"&gt;
+  &lt;p&gt;A message with more than one line.&lt;/p&gt;
+  &lt;button&gt;Reply&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      <aside id="selfCallout" class="callout translate">
+        <strong>Choose the smallest scope:</strong> use
+        <code>items-*</code> when all children share an alignment; use
+        <code>self-*</code> for one deliberate exception.
       </aside>
-
       <p>
         <a id="practice" class="cta translate" href="../index.html"
           >Practice in Flexwind Froggy</a
@@ -112,14 +117,14 @@
           >
         </li>
         <li>
+          <a id="linkItems" class="translate" href="items.html">Align items</a>
+        </li>
+        <li>
           <a id="linkWrap" class="translate" href="wrap.html">Wrap items</a>
         </li>
         <li><a id="linkGap" class="translate" href="gap.html">Add gaps</a></li>
         <li>
           <a id="linkOrder" class="translate" href="order.html">Order items</a>
-        </li>
-        <li>
-          <a id="linkSelf" class="translate" href="self.html">Align one item</a>
         </li>
         <li>
           <a id="linkContent" class="translate" href="content.html"
