@@ -182,8 +182,8 @@ var learnMessages = {
     es: "Mantiene todos los elementos en una sola línea. Es el comportamiento predeterminado.",
   },
   wrapWrap: {
-    en: "Moves overflowed items onto a new line.",
-    es: "Mueve los elementos desbordados a una nueva línea.",
+    en: "Moves items that no longer fit onto a new line.",
+    es: "Mueve a una nueva línea los elementos que ya no caben.",
   },
   wrapReverse: {
     en: "Wraps items in the reverse cross-axis direction.",
@@ -224,7 +224,7 @@ var learnMessages = {
   },
   gapNone: { en: "Removes gaps.", es: "Elimina los espacios." },
   gapTry: {
-    en: "Use Tailwind gap utility on the parent container to create consistent spacing between its children, instead of adding special margins to individual children.",
+    en: "Use a Tailwind gap utility on the parent container to create consistent spacing between its children, instead of adding special margins to individual children.",
     es: "Usa la utilidad gap de Tailwind en el contenedor padre para crear un espacio uniforme entre sus elementos, en lugar de añadir márgenes especiales a cada uno.",
   },
   gapCallout: {
@@ -261,8 +261,8 @@ var learnMessages = {
     es: "Establece un valor de orden explícito de uno.",
   },
   orderTry: {
-    en: "Use order sparingly. It can help put a secondary panel after the main content on small screens, while the document source remains logical.",
-    es: "Usa order con moderación. Puede ayudar a colocar un panel secundario después del contenido principal en pantallas pequeñas, mientras el documento conserva un orden lógico.",
+    en: "Use order sparingly. It can make a visual adjustment at a breakpoint, but the source order should still make sense without CSS.",
+    es: "Usa order con moderación. Puede hacer un ajuste visual en un punto de ruptura, pero el orden del código debe seguir teniendo sentido sin CSS.",
   },
   orderCallout: {
     en: "<strong>Accessibility note:</strong> visual order does not change screen-reader or keyboard order. Keep the source order meaningful, then use <code>order-*</code> only for presentation.",

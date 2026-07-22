@@ -79,12 +79,12 @@
       </table>
       <h2 id="tryIt" class="translate">Try it</h2>
       <p id="orderTry" class="translate">
-        Use order sparingly. It can help put a secondary panel after the main
-        content on small screens, while the document source remains logical.
+        Use order sparingly. It can make a visual adjustment at a breakpoint,
+        but the source order should still make sense without CSS.
       </p>
       <pre><code>&lt;section class="flex flex-col md:flex-row"&gt;
-  &lt;main class="order-1 md:order-none"&gt;Article&lt;/main&gt;
-  &lt;aside class="order-last"&gt;Related links&lt;/aside&gt;
+  &lt;main class="order-1"&gt;Article&lt;/main&gt;
+  &lt;aside class="order-2 md:order-none"&gt;Related links&lt;/aside&gt;
 &lt;/section&gt;</code></pre>
       <aside id="orderCallout" class="callout translate">
         <strong>Accessibility note:</strong> visual order does not change
