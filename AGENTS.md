@@ -7,8 +7,7 @@ This is a small, static browser game for learning Tailwind CSS Flexbox.
 ## Current product status and priorities
 
 The Tailwind teaching experience is mostly complete. Treat it as established
-product behavior: make focused improvements without reopening the earlier
-CSS-to-Tailwind migration unless a change genuinely requires it.
+product behavior.
 
 Current work is primarily about:
 
@@ -36,7 +35,7 @@ The browser loads `index.html`, which loads scripts in this order:
 Execution begins at the bottom of `js/game.js`:
 
 ```js
-$(document).ready(function() {
+$(document).ready(function () {
   game.start();
 });
 ```
