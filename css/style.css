@@ -581,10 +581,6 @@ button:not(.disabled):hover {
   padding-top: 0.5rem;
 }
 
-.has-kofi-widget #gameDonate {
-  display: none;
-}
-
 .donate-button {
   display: inline-block;
   padding: 0.6em 1.2em;

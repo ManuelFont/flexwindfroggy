@@ -163,15 +163,18 @@
           3.0</a>.</span>
     </div>
     <div class="credits donation-link">
+      <span id="gameDonateFallback" hidden>
+        <a id="gameDonate" class="translate donate-button" href="https://ko-fi.com/manuelfont">Buy me a coffee</a>
+      </span>
       <script src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
       <script>
-        if (window.kofiwidget2) {
+        try {
           kofiwidget2.init("Buy me a coffee", "#1f5768", "N4B72B60M7");
           kofiwidget2.draw();
-          document.currentScript.parentElement.classList.add("has-kofi-widget");
+        } catch {
+          document.getElementById("gameDonateFallback").hidden = false;
         }
       </script>
-      <a id="gameDonate" class="translate donate-button" href="https://ko-fi.com/manuelfont">Buy me a coffee</a>
     </div>
   </section>
   <section id="view">
