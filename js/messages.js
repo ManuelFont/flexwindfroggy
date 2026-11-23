@@ -15,6 +15,14 @@ var messages = {
     en: "Support Flexwind Froggy",
     es: "Apoya a Flexwind Froggy",
   },
+  completionDonate: {
+    en: "Buy me a coffee",
+    es: "Invítame a un café",
+  },
+  gameDonate: {
+    en: "Buy me a coffee",
+    es: "Invítame a un café",
+  },
   completionMessage: {
     en: "<p>Enjoyed learning Tailwind CSS Flexbox? Help me keep Flexwind Froggy alive and free for everyone! 🐸💚</p>" +
       "<p>Your donations help cover hosting costs, maintenance, and future improvements so everyone can keep enjoying the game for free.</p>" +
