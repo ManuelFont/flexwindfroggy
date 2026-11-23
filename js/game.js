@@ -268,6 +268,7 @@ var game = {
 
   loadLevel: function (level) {
     $("#completion-card").prop("hidden", true);
+    $(".donation-link").prop("hidden", false);
     $("#editor").show();
     $("#share").hide();
     $("#background, #pond").removeClass("wrap").attr("style", "").empty();
@@ -488,6 +489,7 @@ var game = {
 
     $("#editor").hide();
     $("#completion-card").prop("hidden", false);
+    $(".donation-link").prop("hidden", true);
     $("#code").val(solution);
     $("#share").show();
     $(".frog .bg").removeClass("pulse").addClass("bounce");

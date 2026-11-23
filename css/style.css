@@ -576,6 +576,31 @@ button:not(.disabled):hover {
   margin: 0.75rem 0 1rem;
 }
 
+.donation-link {
+  clear: both;
+  padding-top: 0.5rem;
+}
+
+.has-kofi-widget #gameDonate {
+  display: none;
+}
+
+.donate-button {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  background-color: #1f5768;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.donate-button:hover,
+.donate-button:focus-visible {
+  text-decoration: underline;
+}
+
 .credits {
   margin-top: 1.5em;
   line-height: 1.5em;
